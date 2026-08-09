@@ -1,0 +1,16 @@
+{
+  "name": "Florian Dumler — Portfolio",
+  "short_name": "Florian Dumler",
+  "description": "Full-Stack Development und Python-Automatisierung aus Augsburg.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0b0d0f",
+  "theme_color": "#0b0d0f",
+  "icons": [
+    {
+      "src": "/images/logo.png",
+      "sizes": "any",
+      "type": "image/png"
+    }
+  ]
+}
