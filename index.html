@@ -1,150 +1,163 @@
-<!DOCTYPE html>
-<html lang="de">
+<!doctype html>
+<html lang="de" data-theme="dark">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio von Florian Dumler – Full-Stack Developer aus Augsburg mit Fokus auf Webentwicklung und Python-Automatisierung.">
+  <meta name="theme-color" content="#0b0d0f">
+  <title>Florian Dumler — Full-Stack Developer</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="projects.js" defer></script>
+  <script src="script.js" defer></script>
 </head>
 <body>
-    <!-- Navigationsleiste -->
-<nav class="navbar">
-    <div class="logo">
-        <img src="images/logo.png" alt="Logo">
-    </div>
+  <a class="skip-link" href="#main">Zum Inhalt springen</a>
 
-    <!-- Hamburger-Menü -->
-    <div class="hamburger-menu" id="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
+  <header class="site-header">
+    <a class="wordmark" href="#home" aria-label="Florian Dumler – Startseite">
+      <span aria-hidden="true">FD</span>
+      <span class="wordmark-dot" aria-hidden="true">.</span>
+    </a>
 
-    <div class="nav-links" id="nav-links">
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">Über mich</a></li>
-            <li><a href="#projects">Meine Projekte</a></li>
-            <li><a href="#certificates">Zertifikate</a></li>
-            <li><a href="./Cloud/index.html">Cloud</a></li>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-navigation">
+      <span class="sr-only" data-i18n="navigation.open">Menü öffnen</span>
+      <span></span><span></span>
+    </button>
+
+    <nav id="main-navigation" class="main-navigation" aria-label="Hauptnavigation">
+      <a href="#projects" data-i18n="navigation.projects">Projekte</a>
+      <a href="#skills" data-i18n="navigation.skills">Kenntnisse</a>
+      <a href="#about" data-i18n="navigation.about">Über mich</a>
+      <a href="#contact" data-i18n="navigation.contact">Kontakt</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="language-toggle text-button" type="button" aria-label="Switch to English">EN</button>
+      <button class="theme-toggle icon-button" type="button" aria-label="Helles Farbschema aktivieren">
+        <span class="theme-icon" aria-hidden="true">◐</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="home" class="hero section-shell" aria-labelledby="hero-title">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span class="status-dot"></span><span data-i18n="hero.eyebrow">Entwickelt in Augsburg · offen für Remote</span></p>
+        <h1 id="hero-title"><span data-i18n="hero.lineOne">Full-Stack Development</span><br><span class="accent-text" data-i18n="hero.lineTwo">mit persönlicher Handschrift.</span></h1>
+        <p class="hero-intro" data-i18n="hero.intro">Ich bin Florian Dumler. Ich entwickle moderne Webanwendungen und beschäftige mich intensiv mit Python-Automatisierung – strukturiert, neugierig und mit Freude an guten Lösungen.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects" data-i18n="hero.projectsCta">Projekte entdecken</a>
+          <a class="button button-secondary" href="https://github.com/Flowdi" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal" aria-label="Profil von Florian Dumler">
+        <div class="profile-frame">
+          <img src="images/profilbild.jpg" alt="Porträt von Florian Dumler" width="560" height="560">
+          <div class="profile-label"><span>Florian Dumler</span><small>Full-Stack Developer</small></div>
+        </div>
+        <div class="code-card" aria-hidden="true">
+          <span class="code-comment">// current_focus</span>
+          <span><b>const</b> next = [</span>
+          <span>&nbsp;&nbsp;"Python",</span>
+          <span>&nbsp;&nbsp;"Automation"</span>
+          <span>];</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section-shell section-block" aria-labelledby="projects-title">
+      <div class="section-heading reveal">
+        <div>
+          <p class="section-index">01 / <span data-i18n="projects.label">Ausgewählte Arbeiten</span></p>
+          <h2 id="projects-title" data-i18n="projects.title">Projekte, die mit mir wachsen.</h2>
+        </div>
+        <p data-i18n="projects.intro">Eigene Anwendungen, Experimente und langfristige Ideen – transparent dokumentiert vom ersten Konzept bis zur nächsten Version.</p>
+      </div>
+      <div id="project-grid" class="project-grid" aria-live="polite"></div>
+    </section>
+
+    <section id="skills" class="section-shell section-block" aria-labelledby="skills-title">
+      <div class="section-heading reveal">
+        <div>
+          <p class="section-index">02 / <span data-i18n="skills.label">Kenntnisse</span></p>
+          <h2 id="skills-title" data-i18n="skills.title">Solide Grundlagen. Klarer Lernfokus.</h2>
+        </div>
+        <p data-i18n="skills.intro">Keine künstlichen Prozentwerte: Ich zeige, womit ich arbeite, was ich vertiefe und wohin ich mich entwickle.</p>
+      </div>
+
+      <div class="skills-layout reveal">
+        <article class="skill-feature">
+          <span class="skill-number">01</span>
+          <p class="skill-state" data-i18n="skills.used">Regelmäßig eingesetzt</p>
+          <h3>HTML · CSS · JavaScript</h3>
+          <p data-i18n="skills.webDescription">Responsive Oberflächen, semantische Strukturen und interaktive Funktionen für moderne Webprojekte.</p>
+        </article>
+        <article class="skill-card">
+          <span class="skill-number">02</span>
+          <p class="skill-state" data-i18n="skills.deepening">Derzeit in Vertiefung</p>
+          <h3>Python · Automation</h3>
+        </article>
+        <article class="skill-card">
+          <span class="skill-number">03</span>
+          <p class="skill-state" data-i18n="skills.practical">Praktische Kenntnisse</p>
+          <h3>Git · GitHub · Tooling</h3>
+        </article>
+        <article class="skill-card">
+          <span class="skill-number">04</span>
+          <p class="skill-state" data-i18n="skills.deepening">Derzeit in Vertiefung</p>
+          <h3>Databases · Hosting · Cloud</h3>
+        </article>
+        <article class="skill-card">
+          <span class="skill-number">05</span>
+          <p class="skill-state" data-i18n="skills.exploring">Im Aufbau</p>
+          <h3>Frameworks · C# · Game Dev</h3>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="section-shell section-block about" aria-labelledby="about-title">
+      <div class="about-image reveal">
+        <img src="images/ich.jpg" alt="Florian Dumler in der Natur" width="720" height="900" loading="lazy">
+        <span class="image-caption">Augsburg, Germany</span>
+      </div>
+      <div class="about-copy reveal">
+        <p class="section-index">03 / <span data-i18n="about.label">Persönlich</span></p>
+        <h2 id="about-title" data-i18n="about.title">Technik verstehen. Probleme lösen. Neues schaffen.</h2>
+        <p class="about-lead"><span data-i18n="about.agePrefix">Ich bin</span> <span id="age">38</span> <span data-i18n="about.ageSuffix">Jahre alt, technik- und handwerksbegeistert – und überzeugt davon, dass strukturiertes Arbeiten und Kreativität sehr gut zusammenpassen.</span></p>
+        <p data-i18n="about.story">Gaming, Technik und frühere berufliche Erfahrungen haben mich schließlich zur Programmierung geführt. Besonders reizen mich die Abwechslung und der Moment, in dem aus einem unübersichtlichen Problem eine klare, funktionierende Lösung wird.</p>
+        <p data-i18n="about.goal">Mein Ziel ist es, dauerhaft in der IT Fuß zu fassen und mich besonders in Full-Stack Development und Python-Automatisierung weiterzuentwickeln.</p>
+        <ul class="personal-tags" aria-label="Persönliche Eigenschaften und Interessen">
+          <li data-i18n="about.structured">Strukturiert</li>
+          <li data-i18n="about.ambitious">Ehrgeizig</li>
+          <li data-i18n="about.precise">Ordentlich</li>
+          <li>Gaming</li>
+          <li data-i18n="about.sports">Sport</li>
+          <li data-i18n="about.hiking">Wandern</li>
         </ul>
-    </div>
-</nav>
+      </div>
+    </section>
 
+    <section id="contact" class="section-shell contact section-block reveal" aria-labelledby="contact-title">
+      <p class="section-index">04 / <span data-i18n="contact.label">Kontakt</span></p>
+      <div class="contact-layout">
+        <h2 id="contact-title"><span data-i18n="contact.title">Lass uns in Verbindung bleiben.</span> <span aria-hidden="true">↗</span></h2>
+        <div>
+          <p data-i18n="contact.copy">Aktuell konzentriere ich mich auf eigene Projekte und fachliche Weiterentwicklung. Für Austausch, Feedback und interessante Kontakte bin ich jederzeit offen.</p>
+          <div class="social-list">
+            <a href="https://github.com/Flowdi" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+            <span class="social-placeholder">LinkedIn <small data-i18n="contact.soon">folgt</small></span>
+            <span class="social-placeholder">Xing <small data-i18n="contact.soon">folgt</small></span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
-    <!-- Hauptinhalt mit begrenzter Breite -->
-    <div class="container">
-        <!-- Home-Bereich -->
-        <section id="home" class="home-section">
-            <div class="home-text">
-                <h1>Herzlich Willkommen<br>auf meiner Website</h1>
-                <p>Ich habe eine Leidenschaft für Web Development<br>
-                und Spieleprogrammierung.</p>
-            </div>
-            <div class="home-image">
-                <img src="images/profilbild.jpg" alt="Profilbild" class="profile-pic">
-            </div>
-        </section>
-
-        <!-- Über mich-Bereich -->
-        <section id="about" class="about-section">
-            <h2>Über mich</h2>
-            <p>Hier ist eine kurze Beschreibung über mich und meine Fähigkeiten.<br><br>
-                Hobbys:<br>
-                Sport, Kreatives, Gaming <br><br>
-                Kenntnisse:<br>
-                HTML, CSS, Javascript, C# und Python<br><br>
-                Weiterer Inhalt folgt.. <br><br>
-            Links zu meinem Github Profil als auch zu meinem Youtubekanal, welcher aber seit langem nicht mehr aktiv betrieben wird.</p>
-            <div class="social-links">
-                <a href="https://github.com/Flowdi" target="_blank">
-                    <img src="images/github.png" alt="GitHub">
-                </a>
-                <a href="https://www.youtube.com/@flowditv5565" target="_blank">
-                    <img src="images/youtube.png" alt="YouTube">
-                </a>
-            </div>
-        </section>
-
-        <!-- Projekt Bereich -->
-        <section id="projects">
-            <h2>Meine Projekte</h2>
-            <p>Hier ist eine Auflistung meiner bisherigen Projekte. <br>
-            Für weitere Infos klicken</p>
-            <div class="container2">
-                <div class="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1">
-                    <!-- Project Card 1 - Messenger -->
-                    <div class="project-card">
-                        <div class="icon-container">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="white" class="h-8 w-8">
-                                <rect x="3" y="5" width="18" height="14" rx="2" stroke-linecap="round" stroke-linejoin="round" />
-                                <path d="M3 7l9 6 9-6" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-                        </div>
-                        <h2 class="text-xl font-semibold mb-2">Messenger</h2>
-                        <p class="text-gray-400">Noch in Bearbeitung.<br>Eine eigene Messaging-App, mit eigenem Server, welche auf Desktop und Smartphone laufen soll.</p>
-                    </div>
-
-                    <!-- Project Card 2 - KotSpiel -->
-                    <div class="project-card">
-                        <div class="icon-container">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="white" class="h-8 w-8">
-                                <rect x="6" y="2" width="12" height="20" rx="2" stroke-linecap="round" stroke-linejoin="round" />
-                                <rect x="7.5" y="4" width="9" height="10" rx="1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                <circle cx="10" cy="16" r="1" fill="white" />
-                                <circle cx="14" cy="16" r="1" fill="white" />
-                                <path d="M8 19h1m6 0h1m-4 0h.01" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-                        </div>
-                        <h2 class="text-xl font-semibold mb-2">Kotspiel</h2>
-                        <p class="text-gray-400">Mein erstes eigenes Spiel.<br>Ein Platformer-Game, programmiert mit JavaScript. <br> Fertiggestellt am 21. Oktober 2024.<br> Kleine Updates mit neuen Features folgen.<br>
-                            <a href="game/index.html" class="projekt-button">Zum 'Kot'-Spiel</a>
-                        </p>
-                    </div>
-
-                    <!-- Project Card 3 - Website -->
-                    <div class="project-card">
-                        <div class="icon-container">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="white" class="h-8 w-8">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M4 4h16v12H4z" />
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M2 18h20M9 15h6" />
-                            </svg>
-                        </div>
-                        <h2 class="text-xl font-semibold mb-2">Website</h2>
-                        <p class="text-gray-400">Mein erstes Projekt war es diese Website zu erstellen.<br>
-                        Nach einem ursprünglich anderen Design und Aufbau habe ich mich nun für das aktuelle entschieden.<br>
-                    </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Zertifikat Bereich -->
-        <section id="certificates">
-            <h3>Zertifikate</h3>
-            <p>Hier sind meine bisher erlangten Zertifikate aus dem Programmier- und Webdevelopment Bereich</p>
-            <div class="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1">
-                <!-- Zertifikat-Karte 1 -->
-                <div class="project-card">
-                    <h2 class="text-xl font-semibold mb-2">C# Zertifikat</h2>
-                    <img src="certificates/CSharp.png" alt="C# Zertifikat" class="certificate-image">
-                </div>
-        
-                <!-- Zertifikat-Karte 2 -->
-                <div class="project-card">
-                    <h2 class="text-xl font-semibold mb-2">JavaScript Zertifikat</h2>
-                    <img src="certificates/JavaScript.png" alt="JavaScript Zertifikat" class="certificate-image">
-                </div>
-        
-                <!-- Zertifikat-Karte 3 -->
-                <div class="project-card">
-                    <h2 class="text-xl font-semibold mb-2">Responsive Web Design</h2>
-                    <img src="certificates/ResponsiveWebDesign.png" alt="Responsive Web Design Zertifikat" class="certificate-image">
-                </div>
-            </div>
-        </section>
-    </div>
-    <button id="scrollToTopBtn" title="Nach oben scrollen">↑</button>
-    <script src="script.js"></script>
+  <footer class="site-footer section-shell">
+    <p>© <span id="year"></span> Florian Dumler</p>
+    <p data-i18n="footer.made">Entwickelt mit Neugier in Augsburg.</p>
+    <a href="#home" data-i18n="footer.top">Nach oben ↑</a>
+  </footer>
 </body>
 </html>

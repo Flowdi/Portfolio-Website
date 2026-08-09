@@ -1,52 +1,39 @@
-# 🌐 Florian Dumler - Persönliche Website
+# Florian Dumler — Portfolio
 
-Willkommen im Repository für meine persönliche Website **[floriandumler.de](https://www.floriandumler.de)**! 🚀
+Quellcode für die persönliche Portfolio-Website [floriandumler.de](https://www.floriandumler.de).
 
-## 📌 Übersicht
-Diese Website dient als meine persönliche Portfolio- und Informationsseite. Hier finden Besucher Informationen über mich, meine Projekte und Kontaktmöglichkeiten.
+## Ziel
 
-## ✨ Features
-- 🖥️ **Responsives Design** – Optimiert für Desktop und Mobilgeräte
-- 🚀 **SEO-freundlich** – Optimierung für Suchmaschinen
-- ⚡ **Schnelle Ladezeiten** – Performance-optimiert
-- 🔒 **Sicher & Datenschutzkonform** – DSGVO-konform implementiert
-- 📜 **Blog-Bereich** – Artikel und Updates zu meinen Projekten
+Die Website präsentiert Florian Dumler als Full-Stack Developer mit Fokus auf Webentwicklung und Python-Automatisierung. Sie wird schrittweise zu einer zweisprachigen, zugänglichen und leicht erweiterbaren Projektdokumentation ausgebaut.
 
-## 🛠️ Technologien
-- **Frontend:** HTML, CSS, JavaScript
-- **Backend:** Node.js, Express, PHP
-- **Datenbank:** MongoDB & MySQL
-- **Hosting:** Vercel, Netlify, GitHub Pages
-- **Sonstiges:** Tailwind CSS, Bootstrap, Google Analytics, OpenGraph Meta Tags
+## Aktueller Funktionsumfang
 
-## 🚀 Installation & Lokale Entwicklung
-Falls du das Projekt lokal ausführen möchtest, folge diesen Schritten:
+- responsive Startseite
+- Dark Mode als Standard und optionaler Light Mode
+- deutsche und englische Inhalte
+- zentral gepflegte Projektdaten in `projects.js`
+- dynamische Projektdetailseiten über `project.html?id=...`
+- automatisch berechnetes Alter
+- bestehendes JavaScript-Spiel unter `game/`
 
-```bash
-# Repository klonen
-git clone https://github.com/deinusername/dein-repository.git
+## Projektstruktur
 
-# In das Projektverzeichnis wechseln
-cd dein-repository
-
-# Abhängigkeiten installieren (falls ein Framework genutzt wird)
-npm install  # oder yarn install
-
-# Entwicklungsserver starten
-npm run dev  # oder yarn dev
+```text
+index.html       Startseite
+project.html     Vorlage für Projektdetailseiten
+projects.js      zentrale Projektinhalte
+script.js        Startseitenlogik, Sprache und Theme
+project.js       Logik der Projektdetailseiten
+styles.css       gemeinsames Designsystem
+images/          Bilder und Grafiken
+certificates/    vorhandene Zertifikate
+game/            JavaScript-Plattformer
 ```
 
-## 🌍 Deployment
-Die Website wird automatisch über [Vercel](https://vercel.com/) oder [Netlify](https://www.netlify.com/) gehostet. Änderungen im `main`-Branch lösen ein automatisches Deployment aus.
+## Lokale Vorschau
 
-## 📬 Kontakt
-Hast du Fragen oder Feedback? Kontaktiere mich über:
-- 💼 **Github:** [Flowdi](https://www.github.com/flowdi)
+Die Website ist statisch und benötigt keine Installation. Für eine lokale Vorschau kann ein einfacher Webserver im Projektordner gestartet werden, beispielsweise über die entsprechende Funktion des verwendeten Editors.
 
-## 📜 Lizenz
-Dieses Projekt steht unter der **MIT-Lizenz** – siehe die Datei [LICENSE](LICENSE) für Details.
+## Veröffentlichung
 
----
-
-⭐ **Starte das Repository**, wenn dir dieses Projekt gefällt! 😊
-
+Die produktive Website wird bei Hetzner unter `www.floriandumler.de` betrieben. Änderungen werden erst nach Prüfung gezielt veröffentlicht.
