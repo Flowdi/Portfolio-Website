@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&display=swap');
-
 :root {
   color-scheme: dark;
   --bg: #0b0d0f;
@@ -35,7 +33,7 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--text);
-  font-family: "Manrope", system-ui, sans-serif;
+  font-family: "Aptos", "Segoe UI Variable", "Segoe UI", system-ui, sans-serif;
   line-height: 1.7;
   transition: background-color .25s ease, color .25s ease;
 }
@@ -85,7 +83,7 @@ button { font: inherit; }
   border-bottom: 1px solid var(--line);
   backdrop-filter: blur(18px);
 }
-.wordmark { font: 500 1.15rem "DM Mono", monospace; text-decoration: none; justify-self: start; }
+.wordmark { font: 500 1.15rem "Cascadia Code", "SFMono-Regular", Consolas, monospace; text-decoration: none; justify-self: start; }
 .wordmark-dot, .accent-text, .code-card b { color: var(--accent); }
 .main-navigation { display: flex; gap: clamp(1.3rem, 3vw, 2.8rem); }
 .main-navigation a, .text-button, .icon-button {
@@ -93,7 +91,7 @@ button { font: inherit; }
   background: none;
   border: 0;
   text-decoration: none;
-  font: 500 .77rem "DM Mono", monospace;
+  font: 500 .77rem "Cascadia Code", "SFMono-Regular", Consolas, monospace;
   text-transform: uppercase;
   letter-spacing: .08em;
   cursor: pointer;
@@ -115,7 +113,7 @@ button { font: inherit; }
 .eyebrow, .section-index, .skill-state, .image-caption {
   margin: 0 0 1.4rem;
   color: var(--muted);
-  font: 500 .74rem "DM Mono", monospace;
+  font: 500 .74rem "Cascadia Code", "SFMono-Regular", Consolas, monospace;
   text-transform: uppercase;
   letter-spacing: .12em;
 }
@@ -137,7 +135,7 @@ h3 { line-height: 1.25; }
 .profile-label { position: absolute; left: 1.6rem; right: 1.6rem; bottom: 1.6rem; padding: .8rem 1rem; background: rgba(11, 13, 15, .86); border: 1px solid rgba(255,255,255,.16); backdrop-filter: blur(10px); color: #f2f2ee; }
 .profile-label span, .profile-label small { display: block; }
 .profile-label small { color: #aeb4b8; }
-.code-card { position: absolute; right: -2rem; top: -2rem; width: 220px; padding: 1rem; display: grid; background: var(--surface-strong); border: 1px solid var(--line); box-shadow: var(--shadow); font: .73rem/1.7 "DM Mono", monospace; }
+.code-card { position: absolute; right: -2rem; top: -2rem; width: 220px; padding: 1rem; display: grid; background: var(--surface-strong); border: 1px solid var(--line); box-shadow: var(--shadow); font: .73rem/1.7 "Cascadia Code", "SFMono-Regular", Consolas, monospace; }
 .code-comment { color: var(--muted); }
 
 .section-heading { display: grid; grid-template-columns: 1.25fr .75fr; gap: 3rem; margin-bottom: clamp(3rem, 6vw, 5rem); align-items: end; }
@@ -148,11 +146,11 @@ h3 { line-height: 1.25; }
 .project-card:first-child { grid-column: span 7; }
 .project-card:nth-child(2) { grid-column: span 5; }
 .project-card:hover { border-color: var(--accent); transform: translateY(-5px); }
-.project-meta { display: flex; justify-content: space-between; gap: 1rem; color: var(--muted); font: .72rem "DM Mono", monospace; text-transform: uppercase; letter-spacing: .08em; }
+.project-meta { display: flex; justify-content: space-between; gap: 1rem; color: var(--muted); font: .72rem "Cascadia Code", "SFMono-Regular", Consolas, monospace; text-transform: uppercase; letter-spacing: .08em; }
 .project-card h3 { margin: auto 0 1rem; font-size: clamp(1.8rem, 3vw, 3rem); letter-spacing: -.04em; }
 .project-card p { color: var(--muted); max-width: 580px; }
 .project-tags { display: flex; flex-wrap: wrap; gap: .45rem; padding: 0; margin: 1.2rem 0 0; list-style: none; }
-.project-tags li, .personal-tags li { padding: .35rem .65rem; border: 1px solid var(--line); color: var(--muted); font: .68rem "DM Mono", monospace; text-transform: uppercase; letter-spacing: .06em; }
+.project-tags li, .personal-tags li { padding: .35rem .65rem; border: 1px solid var(--line); color: var(--muted); font: .68rem "Cascadia Code", "SFMono-Regular", Consolas, monospace; text-transform: uppercase; letter-spacing: .06em; }
 .project-arrow { position: absolute; right: 1.6rem; bottom: 1.4rem; color: var(--accent); font-size: 1.5rem; }
 .project-status { color: var(--accent); }
 
@@ -161,7 +159,7 @@ h3 { line-height: 1.25; }
 .skill-feature { grid-row: span 2; min-height: 500px; display: flex; flex-direction: column; background: var(--accent); color: #0b0d0f; }
 .skill-feature .skill-state, .skill-feature p { color: rgba(11,13,15,.7); }
 .skill-feature h3 { margin-top: auto; font-size: clamp(2rem, 4vw, 4rem); letter-spacing: -.05em; }
-.skill-number { font: .75rem "DM Mono", monospace; }
+.skill-number { font: .75rem "Cascadia Code", "SFMono-Regular", Consolas, monospace; }
 .skill-card h3 { margin-top: 4rem; font-size: clamp(1.3rem, 2.3vw, 2rem); }
 
 .about { display: grid; grid-template-columns: .78fr 1.22fr; gap: clamp(3rem, 8vw, 8rem); align-items: center; }
@@ -173,6 +171,14 @@ h3 { line-height: 1.25; }
 .about-copy .about-lead { color: var(--text); font-size: clamp(1.1rem, 1.8vw, 1.35rem); }
 .personal-tags { display: flex; flex-wrap: wrap; gap: .55rem; padding: 0; margin: 2rem 0 0; list-style: none; }
 
+.certificate-grid { display: grid; border-top: 1px solid var(--line); }
+.certificate-card { display: grid; grid-template-columns: 70px 1fr auto; gap: 1.5rem; align-items: center; min-height: 150px; padding: 1.25rem 0; border-bottom: 1px solid var(--line); text-decoration: none; transition: color .2s ease, padding .2s ease; }
+.certificate-card:hover { color: var(--accent); padding-inline: 1rem; }
+.certificate-card p { margin-bottom: .25rem; color: var(--muted); font: .7rem "Cascadia Code", "SFMono-Regular", Consolas, monospace; text-transform: uppercase; letter-spacing: .08em; }
+.certificate-card h3 { margin: 0; font-size: clamp(1.35rem, 3vw, 2.2rem); }
+.certificate-card > span:last-child { color: var(--accent); font-size: 1.4rem; }
+.certificate-number { color: var(--muted); font: .72rem "Cascadia Code", "SFMono-Regular", Consolas, monospace; }
+
 .contact { background: var(--surface); padding-inline: clamp(1.5rem, 5vw, 5rem); border: 1px solid var(--line); }
 .contact-layout { display: grid; grid-template-columns: 1.2fr .8fr; gap: 4rem; align-items: end; }
 .contact h2 { margin-bottom: 0; }
@@ -182,8 +188,8 @@ h3 { line-height: 1.25; }
 .social-list a, .social-placeholder { display: flex; justify-content: space-between; padding: .8rem 0; border-bottom: 1px solid var(--line); text-decoration: none; }
 .social-list a:hover { color: var(--accent); }
 .social-placeholder { color: var(--muted); }
-.social-placeholder small { text-transform: uppercase; font: .65rem "DM Mono", monospace; }
-.site-footer { min-height: 140px; display: flex; justify-content: space-between; align-items: center; gap: 2rem; color: var(--muted); font: .72rem "DM Mono", monospace; }
+.social-placeholder small { text-transform: uppercase; font: .65rem "Cascadia Code", "SFMono-Regular", Consolas, monospace; }
+.site-footer { min-height: 140px; display: flex; justify-content: space-between; align-items: center; gap: 2rem; color: var(--muted); font: .72rem "Cascadia Code", "SFMono-Regular", Consolas, monospace; }
 .site-footer p { margin: 0; }
 .site-footer a { text-decoration: none; }
 
