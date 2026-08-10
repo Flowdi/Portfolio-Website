@@ -132,7 +132,7 @@ h3 { line-height: 1.25; }
 .hero-visual { position: relative; max-width: 540px; justify-self: end; }
 .profile-frame { position: relative; border: 1px solid var(--line); padding: .7rem; background: var(--surface); box-shadow: var(--shadow); }
 .profile-frame img { width: 100%; aspect-ratio: 1 / 1.08; object-fit: cover; filter: saturate(.72) contrast(1.03); }
-.profile-label { position: absolute; left: 1.6rem; right: 1.6rem; bottom: 1.6rem; padding: .8rem 1rem; background: rgba(11, 13, 15, .86); border: 1px solid rgba(255,255,255,.16); backdrop-filter: blur(10px); color: #f2f2ee; }
+.profile-label { position: static; margin-top: .7rem; padding: .8rem 1rem; display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; background: var(--surface-strong); border: 1px solid var(--line); color: var(--text); }
 .profile-label span, .profile-label small { display: block; }
 .profile-label small { color: #aeb4b8; }
 .code-card { position: absolute; right: -2rem; top: -2rem; width: 220px; padding: 1rem; display: grid; background: var(--surface-strong); border: 1px solid var(--line); box-shadow: var(--shadow); font: .73rem/1.7 "Cascadia Code", "SFMono-Regular", Consolas, monospace; }
@@ -195,6 +195,7 @@ h3 { line-height: 1.25; }
 .certificate-media img { width: 100%; max-height: 68vh; object-fit: contain; pointer-events: none; user-select: none; -webkit-user-drag: none; }
 .certificate-dialog-actions { border-top: 1px solid var(--line); }
 .certificate-navigation { display: flex; gap: .6rem; }
+.certificate-next:hover { color: #0b0d0f; background: var(--accent); border-color: var(--accent); }
 .certificate-protection-note { margin: 0; padding: 0 1.4rem 1.2rem; color: var(--muted); font: .62rem "Cascadia Code", "SFMono-Regular", Consolas, monospace; text-align: right; text-transform: uppercase; letter-spacing: .07em; }
 
 .contact { background: var(--surface); padding-inline: clamp(1.5rem, 5vw, 5rem); border: 1px solid var(--line); }
@@ -236,6 +237,7 @@ h3 { line-height: 1.25; }
   .hero { min-height: auto; padding-top: 5rem; }
   h1 { font-size: clamp(2.65rem, 13vw, 4rem); }
   .code-card { right: -1rem; top: -3rem; width: 190px; }
+  .profile-label { align-items: flex-start; flex-direction: column; gap: .2rem; }
   .project-card { min-height: 390px; }
   .project-card { grid-column: span 12; }
   .certificate-card { grid-template-columns: 45px 1fr; }

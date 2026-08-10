@@ -41,7 +41,7 @@ const portfolioProjects = [
     technologies: ["HTML", "CSS", "JavaScript"],
     links: [{ label: "GitHub", url: "https://github.com/Flowdi/Portfolio-Website" }],
     de: {
-      title: "Portfolio – Rebuild",
+      title: "Portfolio Website",
       summary: "Der vollständige Neuaufbau dieser Website als zweisprachiges, zugängliches und erweiterbares Portfolio mit eigener visueller Identität.",
       challenge: "Aus einer frühen Lernwebsite entsteht eine professionelle Plattform, die Projekte nachvollziehbar dokumentiert und leicht erweitert werden kann.",
       period: "August 2026 · laufend",
@@ -70,7 +70,7 @@ const portfolioProjects = [
       imageCaption: "Ausgangspunkt: die Portfolio-Version von 2024"
     },
     en: {
-      title: "Portfolio Rebuild",
+      title: "Portfolio Website",
       summary: "A complete rebuild of this website into a bilingual, accessible and extensible portfolio with its own visual identity.",
       challenge: "An early learning website evolves into a professional platform that documents projects clearly and remains easy to extend.",
       period: "August 2026 · ongoing",
@@ -97,6 +97,49 @@ const portfolioProjects = [
       image: "images/website2024.png",
       imageAlt: "Earlier version of Florian Dumler's portfolio website",
       imageCaption: "Starting point: the 2024 portfolio version"
+    }
+  },
+  {
+    id: "creative-portfolio-experiment",
+    number: "04",
+    category: "Interactive UI",
+    statusKey: "project.progress",
+    technologies: ["JavaScript", "Canvas", "CSS"],
+    links: [{ label: "GitHub", url: "https://github.com/Flowdi/Creative-Portfolio-Interactive-UI-Experiment" }],
+    de: {
+      title: "Creative Portfolio Experiment",
+      summary: "Ein experimentelles, zweisprachiges Portfolio mit animierter Space-Oberfläche, Orbit-Navigation und modular aufgebautem JavaScript-Frontend.",
+      challenge: "Canvas-Animationen, Maus-, Touch- und Tastatursteuerung sowie interaktive Vorschauen werden ohne externe Abhängigkeiten zu einer eigenständigen Oberfläche verbunden.",
+      period: "2026 · laufend",
+      role: "Konzept, UI & Entwicklung"
+    },
+    en: {
+      title: "Creative Portfolio Experiment",
+      summary: "An experimental bilingual portfolio with an animated space interface, orbit navigation and a modular JavaScript frontend.",
+      challenge: "Canvas animations, mouse, touch and keyboard controls as well as interactive previews are combined into a distinct interface without external dependencies.",
+      period: "2026 · ongoing",
+      role: "Concept, UI & development"
+    }
+  },
+  {
+    id: "fashion-cooking-blog",
+    number: "05",
+    category: "Web Development",
+    statusKey: "project.planned",
+    technologies: ["Design", "Web", "Content"],
+    de: {
+      title: "Fashion & Cooking Blog Website",
+      summary: "Eine geplante persönliche Blog-Website für Mode- und Kochinhalte, die in enger Zusammenarbeit mit meiner Freundin entstehen wird.",
+      challenge: "Ziel ist eine eigenständige visuelle Identität, die zwei Themenwelten verbindet und Inhalte später unkompliziert pflegbar macht.",
+      period: "In Planung",
+      role: "Konzept, Design & Entwicklung"
+    },
+    en: {
+      title: "Fashion & Cooking Blog Website",
+      summary: "A planned personal blog for fashion and cooking content that will be created in close collaboration with my partner.",
+      challenge: "The goal is a distinct visual identity that connects two topics while keeping future content easy to maintain.",
+      period: "Planning stage",
+      role: "Concept, design & development"
     }
   }
 ];
