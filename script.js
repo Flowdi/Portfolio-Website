@@ -11,7 +11,7 @@ const translations = {
     "about.structured": "Strukturiert", "about.ambitious": "Ehrgeizig", "about.precise": "Ordentlich", "about.sports": "Sport", "about.hiking": "Wandern", "about.imagePlaceholder": "Neues Bild folgt",
     "certificates.label": "Weiterbildung", "certificates.title": "Lernen, anwenden, weiterdenken.", "certificates.intro": "Zertifikate sind für mich kein Endpunkt, sondern dokumentieren Grundlagen, auf denen ich in eigenen Projekten weiter aufbaue.", "certificates.view": "Ansehen", "certificates.credential": "Zertifikat", "certificates.back": "Zurück zur Seite", "certificates.previous": "Vorheriges", "certificates.next": "Nächstes", "certificates.protection": "Ansichtsmodus · Rechtsklick und Ziehen deaktiviert",
     "contact.label": "Kontakt", "contact.title": "Lass uns in Verbindung bleiben.", "contact.copy": "Aktuell konzentriere ich mich auf eigene Projekte und fachliche Weiterentwicklung. Für Austausch, Feedback und interessante Kontakte bin ich jederzeit offen.", "contact.soon": "folgt",
-    "footer.made": "Entwickelt mit Neugier in Augsburg.", "footer.top": "Nach oben ↑", "project.details": "Details ansehen", "project.progress": "In Entwicklung", "project.rebuild": "In Überarbeitung"
+    "footer.made": "Entwickelt mit Lust auf mehr.", "footer.top": "Nach oben ↑", "project.details": "Details ansehen", "project.progress": "In Entwicklung", "project.rebuild": "In Überarbeitung", "project.planned": "Geplant"
   },
   en: {
     "navigation.open": "Open menu", "navigation.projects": "Projects", "navigation.skills": "Skills", "navigation.about": "About", "navigation.contact": "Contact",
@@ -25,7 +25,7 @@ const translations = {
     "about.structured": "Structured", "about.ambitious": "Ambitious", "about.precise": "Precise", "about.sports": "Sports", "about.hiking": "Hiking", "about.imagePlaceholder": "New image coming soon",
     "certificates.label": "Continued learning", "certificates.title": "Learn, apply, keep thinking.", "certificates.intro": "Certificates are not the finish line for me. They document foundations that I continue to build on through practical projects.", "certificates.view": "View", "certificates.credential": "Certificate", "certificates.back": "Back to page", "certificates.previous": "Previous", "certificates.next": "Next", "certificates.protection": "Viewer mode · Right-click and dragging disabled",
     "contact.label": "Contact", "contact.title": "Let's stay connected.", "contact.copy": "I am currently focused on personal projects and professional growth. I am always open to exchange, feedback and interesting connections.", "contact.soon": "soon",
-    "footer.made": "Built with curiosity in Augsburg.", "footer.top": "Back to top ↑", "project.details": "View details", "project.progress": "In development", "project.rebuild": "Being rebuilt"
+    "footer.made": "Built with an appetite for more.", "footer.top": "Back to top ↑", "project.details": "View details", "project.progress": "In development", "project.rebuild": "Being rebuilt", "project.planned": "Planned"
   }
 };
 
