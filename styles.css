@@ -195,7 +195,7 @@ h3 { line-height: 1.25; }
 .certificate-media img { width: 100%; max-height: 68vh; object-fit: contain; pointer-events: none; user-select: none; -webkit-user-drag: none; }
 .certificate-dialog-actions { border-top: 1px solid var(--line); }
 .certificate-navigation { display: flex; gap: .6rem; }
-.certificate-next:hover { color: #0b0d0f; background: var(--accent); border-color: var(--accent); }
+.certificate-dialog-actions .button:hover { color: #0b0d0f; background: var(--accent); border-color: var(--accent); }
 .certificate-protection-note { margin: 0; padding: 0 1.4rem 1.2rem; color: var(--muted); font: .62rem "Cascadia Code", "SFMono-Regular", Consolas, monospace; text-align: right; text-transform: uppercase; letter-spacing: .07em; }
 
 .contact { background: var(--surface); padding-inline: clamp(1.5rem, 5vw, 5rem); border: 1px solid var(--line); }
@@ -204,10 +204,8 @@ h3 { line-height: 1.25; }
 .contact h2 span:last-child { color: var(--accent); }
 .contact-layout p { color: var(--muted); }
 .social-list { display: grid; border-top: 1px solid var(--line); }
-.social-list a, .social-placeholder { display: flex; justify-content: space-between; padding: .8rem 0; border-bottom: 1px solid var(--line); text-decoration: none; }
+.social-list a { display: flex; justify-content: space-between; padding: .8rem 0; border-bottom: 1px solid var(--line); text-decoration: none; }
 .social-list a:hover { color: var(--accent); }
-.social-placeholder { color: var(--muted); }
-.social-placeholder small { text-transform: uppercase; font: .65rem "Cascadia Code", "SFMono-Regular", Consolas, monospace; }
 .site-footer { min-height: 140px; display: flex; justify-content: space-between; align-items: center; gap: 2rem; color: var(--muted); font: .72rem "Cascadia Code", "SFMono-Regular", Consolas, monospace; }
 .site-footer p { margin: 0; }
 .site-footer a { text-decoration: none; }

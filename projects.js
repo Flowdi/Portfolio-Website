@@ -37,7 +37,7 @@ const portfolioProjects = [
     id: "portfolio-v1",
     number: "03",
     category: "Web Development",
-    statusKey: "project.progress",
+    statusKey: "project.complete",
     technologies: ["HTML", "CSS", "JavaScript"],
     links: [{ label: "GitHub", url: "https://github.com/Flowdi/Portfolio-Website" }],
     de: {
@@ -103,7 +103,7 @@ const portfolioProjects = [
     id: "creative-portfolio-experiment",
     number: "04",
     category: "Interactive UI",
-    statusKey: "project.progress",
+    statusKey: "project.complete",
     technologies: ["JavaScript", "Canvas", "CSS"],
     links: [{ label: "GitHub", url: "https://github.com/Flowdi/Creative-Portfolio-Interactive-UI-Experiment" }],
     de: {
