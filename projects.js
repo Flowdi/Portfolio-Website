@@ -39,15 +39,64 @@ const portfolioProjects = [
     category: "Web Development",
     statusKey: "project.progress",
     technologies: ["HTML", "CSS", "JavaScript"],
+    links: [{ label: "GitHub", url: "https://github.com/Flowdi/Portfolio-Website" }],
     de: {
       title: "Portfolio – Rebuild",
       summary: "Der vollständige Neuaufbau dieser Website als zweisprachiges, zugängliches und erweiterbares Portfolio mit eigener visueller Identität.",
-      challenge: "Aus einer frühen Lernwebsite entsteht eine professionelle Plattform, die Projekte nachvollziehbar dokumentiert und leicht erweitert werden kann."
+      challenge: "Aus einer frühen Lernwebsite entsteht eine professionelle Plattform, die Projekte nachvollziehbar dokumentiert und leicht erweitert werden kann.",
+      period: "August 2026 · laufend",
+      role: "Konzept, Design & Entwicklung",
+      introduction: "Die erste Version dieser Website war ein wichtiger Lernschritt: Sie brachte Profil, Kenntnisse, Zertifikate und erste Projekte an einem Ort zusammen. Mit wachsender Erfahrung passten Struktur, Sprache und technische Qualität jedoch nicht mehr zu dem Anspruch, den das Portfolio heute vertreten soll.",
+      problem: "Die alte Seite wirkte wie eine Sammlung einzelner Bereiche. Inhalte waren teilweise vorläufig, Projekte zu knapp beschrieben und neue Einträge nur durch Änderungen an mehreren Stellen möglich. Auch Navigation, Tastaturbedienung, mobile Darstellung und Metadaten brauchten ein belastbares Fundament.",
+      approach: "Der Neuaufbau beginnt bewusst ohne großes Framework. Eine schlanke statische Basis aus HTML, CSS und JavaScript passt zum Hosting, bleibt transparent und macht jede Entscheidung nachvollziehbar. Inhalte, Übersetzungen und Projektdaten werden dabei getrennt von der Darstellung gepflegt.",
+      result: "Entstanden ist eine zweisprachige, responsive Grundlage mit eigenem Designsystem, Dark- und Light-Theme, zentraler Projektverwaltung und wiederverwendbaren Detailseiten. Der Umbau wird in klar abgegrenzten Arbeitspaketen dokumentiert und erweitert.",
+      highlights: [
+        "Zentrale Projektdaten statt fest eingebauter Karten",
+        "Deutsch und Englisch aus einer gemeinsamen Inhaltsstruktur",
+        "Dark Mode als Standard mit gespeichertem Light Mode",
+        "Semantische Struktur, Tastaturfokus und reduzierte Bewegung",
+        "SEO-Basis mit Sitemap und strukturierten Personendaten",
+        "Keine extern eingebundenen Schriften oder Tracking-Dienste"
+      ],
+      decisions: [
+        { title: "Bewusst ohne Framework", text: "Für den aktuellen Umfang bietet eine statische Architektur kurze Ladezeiten, einfaches Hosting und möglichst wenig technische Komplexität." },
+        { title: "Inhalte als Daten", text: "Projekte liegen zentral in einer Datei. Neue Fallstudien lassen sich ergänzen, ohne die Startseite neu strukturieren zu müssen." },
+        { title: "Persönlich statt generisch", text: "Typografie, technische Raster, Neonorange und Fotografie verbinden eine seriöse Oberfläche mit einer eigenen, wärmeren Handschrift." }
+      ],
+      learnings: "Ein professioneller Neuaufbau beginnt nicht mit Effekten, sondern mit Positionierung, guten Inhalten und einer Struktur, die Veränderung aushält. Besonders wichtig war die Entscheidung, Selbsteinschätzungen nicht als scheinbar exakte Prozentwerte zu zeigen, sondern Erfahrung ehrlich einzuordnen.",
+      nextSteps: ["Projektseiten mit echten Screenshots erweitern", "Food-App als nächste ausführliche Fallstudie dokumentieren", "Social-Preview und finale Bildoptimierung ergänzen", "Spiel überarbeiten und wieder als Live-Demo veröffentlichen"],
+      image: "images/website2024.png",
+      imageAlt: "Frühere Version der Portfolio-Website von Florian Dumler",
+      imageCaption: "Ausgangspunkt: die Portfolio-Version von 2024"
     },
     en: {
       title: "Portfolio Rebuild",
       summary: "A complete rebuild of this website into a bilingual, accessible and extensible portfolio with its own visual identity.",
-      challenge: "An early learning website evolves into a professional platform that documents projects clearly and remains easy to extend."
+      challenge: "An early learning website evolves into a professional platform that documents projects clearly and remains easy to extend.",
+      period: "August 2026 · ongoing",
+      role: "Concept, design & development",
+      introduction: "The first version of this website was an important learning step. It brought my profile, skills, certificates and early projects together in one place. As my experience grew, however, its structure, language and technical quality no longer represented the standard I want the portfolio to communicate today.",
+      problem: "The old site felt like a collection of separate sections. Some content was provisional, projects lacked context and adding a new entry meant editing several places. Navigation, keyboard support, mobile presentation and metadata also needed a reliable foundation.",
+      approach: "The rebuild deliberately starts without a large framework. A lean static foundation using HTML, CSS and JavaScript fits the hosting setup, remains transparent and keeps every decision understandable. Content, translations and project data are maintained separately from presentation.",
+      result: "The result is a bilingual, responsive foundation with its own design system, dark and light themes, central project management and reusable detail pages. The rebuild is documented and extended through clearly scoped iterations.",
+      highlights: [
+        "Central project data instead of hard-coded cards",
+        "German and English from one shared content structure",
+        "Dark mode by default with a saved light mode",
+        "Semantic structure, keyboard focus and reduced motion",
+        "SEO foundation with sitemap and structured person data",
+        "No externally loaded fonts or tracking services"
+      ],
+      decisions: [
+        { title: "Deliberately framework-free", text: "For the current scope, a static architecture delivers fast loading, simple hosting and minimal technical complexity." },
+        { title: "Content as data", text: "Projects live in one central file. New case studies can be added without restructuring the homepage." },
+        { title: "Personal, not generic", text: "Typography, technical grids, neon orange and photography combine a serious interface with a warmer personal signature." }
+      ],
+      learnings: "A professional rebuild does not begin with effects. It begins with positioning, strong content and a structure that can handle change. One particularly important decision was replacing seemingly precise skill percentages with honest descriptions of practical experience.",
+      nextSteps: ["Add real screenshots to project pages", "Document the Food App as the next full case study", "Add a social preview and final image optimization", "Rebuild the game and publish it again as a live demo"],
+      image: "images/website2024.png",
+      imageAlt: "Earlier version of Florian Dumler's portfolio website",
+      imageCaption: "Starting point: the 2024 portfolio version"
     }
   }
 ];
