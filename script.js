@@ -9,7 +9,7 @@ const translations = {
     "about.label": "Persönlich", "about.title": "Technik verstehen. Probleme lösen. Neues schaffen.", "about.agePrefix": "Ich bin", "about.ageSuffix": "Jahre alt, technik- und handwerksbegeistert – und überzeugt davon, dass strukturiertes Arbeiten und Kreativität sehr gut zusammenpassen.",
     "about.story": "Gaming, Technik und frühere berufliche Erfahrungen haben mich schließlich zur Programmierung geführt. Besonders reizen mich die Abwechslung und der Moment, in dem aus einem unübersichtlichen Problem eine klare, funktionierende Lösung wird.", "about.goal": "Mein Ziel ist es, dauerhaft in der IT Fuß zu fassen und mich besonders in Full-Stack Development und Python-Automatisierung weiterzuentwickeln.",
     "about.structured": "Strukturiert", "about.ambitious": "Ehrgeizig", "about.precise": "Ordentlich", "about.sports": "Sport", "about.hiking": "Wandern", "about.imagePlaceholder": "Neues Bild folgt",
-    "certificates.label": "Weiterbildung", "certificates.title": "Lernen, anwenden, weiterdenken.", "certificates.intro": "Zertifikate sind für mich kein Endpunkt, sondern dokumentieren Grundlagen, auf denen ich in eigenen Projekten weiter aufbaue.", "certificates.verified": "Nachweis vorhanden",
+    "certificates.label": "Weiterbildung", "certificates.title": "Lernen, anwenden, weiterdenken.", "certificates.intro": "Zertifikate sind für mich kein Endpunkt, sondern dokumentieren Grundlagen, auf denen ich in eigenen Projekten weiter aufbaue.", "certificates.view": "Ansehen", "certificates.credential": "Zertifikat", "certificates.back": "Zurück zur Seite", "certificates.previous": "Vorheriges", "certificates.next": "Nächstes", "certificates.protection": "Ansichtsmodus · Rechtsklick und Ziehen deaktiviert",
     "contact.label": "Kontakt", "contact.title": "Lass uns in Verbindung bleiben.", "contact.copy": "Aktuell konzentriere ich mich auf eigene Projekte und fachliche Weiterentwicklung. Für Austausch, Feedback und interessante Kontakte bin ich jederzeit offen.", "contact.soon": "folgt",
     "footer.made": "Entwickelt mit Neugier in Augsburg.", "footer.top": "Nach oben ↑", "project.details": "Details ansehen", "project.progress": "In Entwicklung", "project.rebuild": "In Überarbeitung"
   },
@@ -23,7 +23,7 @@ const translations = {
     "about.label": "Personal", "about.title": "Understand technology. Solve problems. Build new things.", "about.agePrefix": "I'm", "about.ageSuffix": "years old, passionate about technology and craftsmanship – and convinced that structured work and creativity belong together.",
     "about.story": "Gaming, technology and previous professional experiences eventually led me to programming. What excites me most is the variety and the moment when a complex problem turns into a clear, working solution.", "about.goal": "My goal is to establish myself in IT and continue growing, particularly in full-stack development and Python automation.",
     "about.structured": "Structured", "about.ambitious": "Ambitious", "about.precise": "Precise", "about.sports": "Sports", "about.hiking": "Hiking", "about.imagePlaceholder": "New image coming soon",
-    "certificates.label": "Continued learning", "certificates.title": "Learn, apply, keep thinking.", "certificates.intro": "Certificates are not the finish line for me. They document foundations that I continue to build on through practical projects.", "certificates.verified": "Credential available",
+    "certificates.label": "Continued learning", "certificates.title": "Learn, apply, keep thinking.", "certificates.intro": "Certificates are not the finish line for me. They document foundations that I continue to build on through practical projects.", "certificates.view": "View", "certificates.credential": "Certificate", "certificates.back": "Back to page", "certificates.previous": "Previous", "certificates.next": "Next", "certificates.protection": "Viewer mode · Right-click and dragging disabled",
     "contact.label": "Contact", "contact.title": "Let's stay connected.", "contact.copy": "I am currently focused on personal projects and professional growth. I am always open to exchange, feedback and interesting connections.", "contact.soon": "soon",
     "footer.made": "Built with curiosity in Augsburg.", "footer.top": "Back to top ↑", "project.details": "View details", "project.progress": "In development", "project.rebuild": "Being rebuilt"
   }
@@ -115,6 +115,41 @@ navigation.querySelectorAll("a").forEach(link => link.addEventListener("click", 
   menuToggle.setAttribute("aria-expanded", "false");
   navigation.classList.remove("open");
 }));
+
+const certificates = [
+  { id: "responsive", title: "Responsive Web Design", image: "certificates/ResponsiveWebDesign.png", date: "August 2024" },
+  { id: "javascript", title: "JavaScript Algorithms and Data Structures", image: "certificates/JavaScript.png", date: "September 2024" }
+];
+const certificateViewer = document.querySelector("#certificate-viewer");
+const certificateImage = document.querySelector("#certificate-image");
+let activeCertificateIndex = 0;
+
+function showCertificate(index) {
+  activeCertificateIndex = (index + certificates.length) % certificates.length;
+  const certificate = certificates[activeCertificateIndex];
+  document.querySelector("#certificate-dialog-title").textContent = certificate.title;
+  document.querySelector("#certificate-position").textContent = `0${activeCertificateIndex + 1} / 0${certificates.length}`;
+  certificateImage.src = certificate.image;
+  certificateImage.alt = `${certificate.title} – Florian Dumler, ${certificate.date}`;
+}
+
+document.querySelectorAll("[data-certificate]").forEach(button => {
+  button.addEventListener("click", () => {
+    const index = certificates.findIndex(certificate => certificate.id === button.dataset.certificate);
+    showCertificate(index);
+    certificateViewer.showModal();
+  });
+});
+document.querySelectorAll("[data-certificate-close]").forEach(button => button.addEventListener("click", () => certificateViewer.close()));
+document.querySelector("#certificate-previous").addEventListener("click", () => showCertificate(activeCertificateIndex - 1));
+document.querySelector("#certificate-next").addEventListener("click", () => showCertificate(activeCertificateIndex + 1));
+certificateViewer.addEventListener("click", event => { if (event.target === certificateViewer) certificateViewer.close(); });
+certificateViewer.addEventListener("keydown", event => {
+  if (event.key === "ArrowLeft") showCertificate(activeCertificateIndex - 1);
+  if (event.key === "ArrowRight") showCertificate(activeCertificateIndex + 1);
+});
+certificateViewer.addEventListener("contextmenu", event => event.preventDefault());
+certificateViewer.addEventListener("dragstart", event => event.preventDefault());
 
 calculateAge();
 document.querySelector("#year").textContent = new Date().getFullYear();
