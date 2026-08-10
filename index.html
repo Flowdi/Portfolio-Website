@@ -174,21 +174,16 @@
         <p data-i18n="certificates.intro">Zertifikate sind für mich kein Endpunkt, sondern dokumentieren Grundlagen, auf denen ich in eigenen Projekten weiter aufbaue.</p>
       </div>
       <div class="certificate-grid reveal">
-        <article class="certificate-card">
+        <button class="certificate-card" type="button" data-certificate="responsive" aria-haspopup="dialog">
           <span class="certificate-number">01</span>
           <div><p>freeCodeCamp · <time datetime="2024-08-21">08 / 2024</time></p><h3>Responsive Web Design</h3></div>
-          <span class="certificate-status" data-i18n="certificates.verified">Nachweis vorhanden</span>
-        </article>
-        <article class="certificate-card">
+          <span class="certificate-status" data-i18n="certificates.view">Ansehen</span>
+        </button>
+        <button class="certificate-card" type="button" data-certificate="javascript" aria-haspopup="dialog">
           <span class="certificate-number">02</span>
           <div><p>freeCodeCamp · <time datetime="2024-09-20">09 / 2024</time></p><h3>JavaScript Algorithms and Data Structures</h3></div>
-          <span class="certificate-status" data-i18n="certificates.verified">Nachweis vorhanden</span>
-        </article>
-        <article class="certificate-card">
-          <span class="certificate-number">03</span>
-          <div><p>freeCodeCamp · Microsoft · <time datetime="2024-10-15">10 / 2024</time></p><h3>Foundational C# with Microsoft</h3></div>
-          <span class="certificate-status" data-i18n="certificates.verified">Nachweis vorhanden</span>
-        </article>
+          <span class="certificate-status" data-i18n="certificates.view">Ansehen</span>
+        </button>
       </div>
     </section>
 
@@ -207,6 +202,27 @@
       </div>
     </section>
   </main>
+
+  <dialog id="certificate-viewer" class="certificate-viewer" aria-labelledby="certificate-dialog-title">
+    <div class="certificate-dialog-header">
+      <div>
+        <p class="section-index"><span id="certificate-position">01 / 02</span> · <span data-i18n="certificates.credential">Zertifikat</span></p>
+        <h2 id="certificate-dialog-title">Responsive Web Design</h2>
+      </div>
+      <button class="dialog-close-icon" type="button" data-certificate-close aria-label="Zertifikatsansicht schließen">×</button>
+    </div>
+    <div class="certificate-media" data-protected-media>
+      <img id="certificate-image" src="" alt="" draggable="false">
+    </div>
+    <div class="certificate-dialog-actions">
+      <button class="button button-secondary" type="button" data-certificate-close>← <span data-i18n="certificates.back">Zurück zur Seite</span></button>
+      <div class="certificate-navigation">
+        <button class="button button-secondary" type="button" id="certificate-previous"><span aria-hidden="true">←</span> <span data-i18n="certificates.previous">Vorheriges</span></button>
+        <button class="button button-primary" type="button" id="certificate-next"><span data-i18n="certificates.next">Nächstes</span> <span aria-hidden="true">→</span></button>
+      </div>
+    </div>
+    <p class="certificate-protection-note" data-i18n="certificates.protection">Ansichtsmodus · Rechtsklick und Ziehen deaktiviert</p>
+  </dialog>
 
   <footer class="site-footer section-shell">
     <p>© <span id="year"></span> Florian Dumler</p>

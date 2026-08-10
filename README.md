@@ -26,6 +26,7 @@ script.js        Startseitenlogik, Sprache und Theme
 project.js       Logik der Projektdetailseiten
 styles.css       gemeinsames Designsystem
 images/          Bilder und Grafiken
+certificates/    zwei ausgewählte Zertifikatsnachweise
 game/            JavaScript-Plattformer
 ```
 
