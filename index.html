@@ -142,7 +142,10 @@
 
     <section id="about" class="section-shell section-block about" aria-labelledby="about-title">
       <div class="about-image reveal">
-        <img src="images/ich.jpg" alt="Florian Dumler in der Natur" width="720" height="900" loading="lazy">
+        <div class="about-image-placeholder" aria-hidden="true">
+          <span>FD<span class="wordmark-dot">.</span></span>
+          <small data-i18n="about.imagePlaceholder">Neues Bild folgt</small>
+        </div>
         <span class="image-caption">Augsburg, Germany</span>
       </div>
       <div class="about-copy reveal">
@@ -171,21 +174,21 @@
         <p data-i18n="certificates.intro">Zertifikate sind für mich kein Endpunkt, sondern dokumentieren Grundlagen, auf denen ich in eigenen Projekten weiter aufbaue.</p>
       </div>
       <div class="certificate-grid reveal">
-        <a class="certificate-card" href="certificates/ResponsiveWebDesign.png" target="_blank" rel="noopener noreferrer" aria-label="Zertifikat Responsive Web Design öffnen">
+        <article class="certificate-card">
           <span class="certificate-number">01</span>
           <div><p>freeCodeCamp · <time datetime="2024-08-21">08 / 2024</time></p><h3>Responsive Web Design</h3></div>
-          <span aria-hidden="true">↗</span>
-        </a>
-        <a class="certificate-card" href="certificates/JavaScript.png" target="_blank" rel="noopener noreferrer" aria-label="Zertifikat JavaScript Algorithms and Data Structures öffnen">
+          <span class="certificate-status" data-i18n="certificates.verified">Nachweis vorhanden</span>
+        </article>
+        <article class="certificate-card">
           <span class="certificate-number">02</span>
           <div><p>freeCodeCamp · <time datetime="2024-09-20">09 / 2024</time></p><h3>JavaScript Algorithms and Data Structures</h3></div>
-          <span aria-hidden="true">↗</span>
-        </a>
-        <a class="certificate-card" href="certificates/CSharp.png" target="_blank" rel="noopener noreferrer" aria-label="Zertifikat Foundational C# with Microsoft öffnen">
+          <span class="certificate-status" data-i18n="certificates.verified">Nachweis vorhanden</span>
+        </article>
+        <article class="certificate-card">
           <span class="certificate-number">03</span>
           <div><p>freeCodeCamp · Microsoft · <time datetime="2024-10-15">10 / 2024</time></p><h3>Foundational C# with Microsoft</h3></div>
-          <span aria-hidden="true">↗</span>
-        </a>
+          <span class="certificate-status" data-i18n="certificates.verified">Nachweis vorhanden</span>
+        </article>
       </div>
     </section>
 
