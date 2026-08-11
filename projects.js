@@ -110,15 +110,69 @@ const portfolioProjects = [
       title: "Creative Portfolio Experiment",
       summary: "Ein experimentelles, zweisprachiges Portfolio mit animierter Space-Oberfläche, Orbit-Navigation und modular aufgebautem JavaScript-Frontend.",
       challenge: "Canvas-Animationen, Maus-, Touch- und Tastatursteuerung sowie interaktive Vorschauen werden ohne externe Abhängigkeiten zu einer eigenständigen Oberfläche verbunden.",
-      period: "2026 · laufend",
-      role: "Konzept, UI & Entwicklung"
+      period: "2026",
+      role: "Konzept, UI & Entwicklung",
+      introduction: "Dieses Projekt untersucht, wie ein Portfolio selbst zu einer interaktiven Erfahrung werden kann. Statt einer klassischen Navigation bewegen sich Besucher durch eine animierte Weltraumoberfläche mit zentraler Boost-Sphere, umlaufenden Bereichen und eingebetteten Projektvorschauen.",
+      problem: "Eine visuell starke Oberfläche darf Orientierung, Zugänglichkeit und Leistung nicht opfern. Die zentrale Herausforderung bestand darin, Canvas-Animation, Orbit-Navigation, Dialoge und eingebettete Inhalte so zu verbinden, dass die Seite sowohl mit Maus und Touch als auch per Tastatur verständlich bedienbar bleibt.",
+      approach: "Die Anwendung wurde in klar getrennte JavaScript-Module gegliedert. Hintergrundeffekte, Eingaben, Orbit-Logik, Übersetzungen und UI-Komponenten besitzen eigene Verantwortungsbereiche. Ein eigener Bundle-Schritt erzeugt zusätzlich eine direkt per index.html startbare Version, ohne die wartbare Quellstruktur aufzugeben.",
+      result: "Entstanden ist ein eigenständiges UI-Experiment mit Sternen, Nebel, Meteoren, Orbit-Navigation und zweisprachigen Inhaltsbereichen. Die Oberfläche reagiert auf Maus, Touch und Tastatur, berücksichtigt reduzierte Bewegung und pausiert aufwendige Animationen in inaktiven Browser-Tabs.",
+      highlights: [
+        "Animierter Canvas-Hintergrund mit Sternen, Nebel und Meteoren",
+        "Interaktive Orbit-Navigation rund um eine zentrale Boost-Sphere",
+        "Deutsch und Englisch aus getrennten Übersetzungsdaten",
+        "Maus-, Touch- und Tastatursteuerung",
+        "Isolierte Vorschauen älterer Projekte",
+        "Dependency-freier Build-Schritt für den direkten Dateistart"
+      ],
+      decisions: [
+        { title: "Canvas als Bühne", text: "Der animierte Hintergrund transportiert die kreative Idee, während normale HTML-Elemente für Inhalte und zentrale Bedienelemente erhalten bleiben." },
+        { title: "Module nach Verantwortung", text: "Eingaben, Animationen, Navigation und UI sind getrennt. Dadurch bleibt die experimentelle Oberfläche trotz vieler Interaktionen nachvollziehbar." },
+        { title: "Direktstart und Quellstruktur", text: "Ein eigenes Bundle verbindet komfortables Öffnen per Doppelklick mit modularen Dateien für die weitere Entwicklung." }
+      ],
+      learnings: "Experimentelles Design braucht besonders klare technische Grenzen. Animationen wirken nur dann überzeugend, wenn Eingaben zuverlässig bleiben, Fokuszustände sichtbar sind und schwächere Geräte nicht unnötig belastet werden.",
+      nextSteps: ["Weitere reale Python- und Automatisierungsprojekte ergänzen", "Interaktionen und Übersetzungsdaten automatisiert testen", "Canvas-Last auf mobilen Geräten weiter reduzieren", "Projektvorschauen und Dokumentation ausbauen"],
+      sectionTitles: {
+        introduction: "Ein Portfolio als interaktive Erfahrung.",
+        problem: "Kreativität ohne Kontrollverlust.",
+        approach: "Viele Effekte, klar getrennte Bausteine.",
+        result: "Eine eigenständige Space-Oberfläche.",
+        learning: "Animation braucht technische Disziplin.",
+        next: "Vom Experiment zur belastbaren Plattform."
+      }
     },
     en: {
       title: "Creative Portfolio Experiment",
       summary: "An experimental bilingual portfolio with an animated space interface, orbit navigation and a modular JavaScript frontend.",
       challenge: "Canvas animations, mouse, touch and keyboard controls as well as interactive previews are combined into a distinct interface without external dependencies.",
-      period: "2026 · ongoing",
-      role: "Concept, UI & development"
+      period: "2026",
+      role: "Concept, UI & development",
+      introduction: "This project explores how a portfolio can become an interactive experience of its own. Instead of conventional navigation, visitors move through an animated space interface with a central boost sphere, orbiting sections and embedded project previews.",
+      problem: "A visually ambitious interface must not sacrifice orientation, accessibility or performance. The central challenge was connecting canvas animation, orbit navigation, dialogs and embedded content while keeping the site understandable with mouse, touch and keyboard input.",
+      approach: "The application is split into focused JavaScript modules. Background effects, input handling, orbit logic, translations and UI components each have a clear responsibility. A custom build step also creates a version that runs directly from index.html without sacrificing the maintainable source structure.",
+      result: "The result is a distinct UI experiment with stars, nebulae, meteors, orbit navigation and bilingual content areas. The interface supports mouse, touch and keyboard input, respects reduced motion and pauses expensive animations in inactive browser tabs.",
+      highlights: [
+        "Animated canvas background with stars, nebulae and meteors",
+        "Interactive orbit navigation around a central boost sphere",
+        "German and English from separate translation data",
+        "Mouse, touch and keyboard controls",
+        "Isolated previews of earlier projects",
+        "Dependency-free build step for direct file launch"
+      ],
+      decisions: [
+        { title: "Canvas as a stage", text: "The animated background carries the creative concept while regular HTML remains responsible for content and essential controls." },
+        { title: "Modules by responsibility", text: "Input, animation, navigation and UI are separated, keeping the experimental interface understandable despite its many interactions." },
+        { title: "Direct launch and source structure", text: "A custom bundle combines convenient double-click launching with modular files for ongoing development." }
+      ],
+      learnings: "Experimental design needs particularly clear technical boundaries. Animation is only convincing when input remains reliable, focus states stay visible and less powerful devices are not burdened unnecessarily.",
+      nextSteps: ["Add more real Python and automation projects", "Automate tests for interactions and translation data", "Further reduce canvas load on mobile devices", "Expand project previews and documentation"],
+      sectionTitles: {
+        introduction: "A portfolio as an interactive experience.",
+        problem: "Creativity without losing control.",
+        approach: "Many effects, clearly separated building blocks.",
+        result: "A distinct space interface.",
+        learning: "Animation requires technical discipline.",
+        next: "From experiment to robust platform."
+      }
     }
   },
   {
