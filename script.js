@@ -1,6 +1,6 @@
 const translations = {
   de: {
-    "navigation.open": "Menü öffnen", "navigation.projects": "Projekte", "navigation.skills": "Kenntnisse", "navigation.about": "Über mich", "navigation.contact": "Kontakt",
+    "navigation.open": "Menü öffnen", "navigation.projects": "Projekte", "navigation.skills": "Kenntnisse", "navigation.about": "Über mich", "navigation.contact": "Kontakt", "theme.light": "Helles Farbschema aktivieren", "theme.dark": "Dunkles Farbschema aktivieren",
     "hero.eyebrow": "Entwickelt in Augsburg · offen für Remote", "hero.lineOne": "Full-Stack Development", "hero.lineTwo": "mit persönlicher Handschrift.",
     "hero.intro": "Ich bin Florian Dumler. Ich entwickle moderne Webanwendungen und beschäftige mich intensiv mit Python-Automatisierung – strukturiert, neugierig und mit Freude an guten Lösungen.", "hero.projectsCta": "Projekte entdecken",
     "projects.label": "Ausgewählte Arbeiten", "projects.title": "Projekte, die mit mir wachsen.", "projects.intro": "Eigene Anwendungen, Experimente und langfristige Ideen – transparent dokumentiert vom ersten Konzept bis zur nächsten Version.",
@@ -14,7 +14,7 @@ const translations = {
     "footer.made": "Entwickelt mit Lust auf mehr.", "footer.top": "Nach oben ↑", "project.details": "Details ansehen", "project.progress": "In Entwicklung", "project.rebuild": "In Überarbeitung", "project.planned": "Geplant", "project.complete": "Abgeschlossen"
   },
   en: {
-    "navigation.open": "Open menu", "navigation.projects": "Projects", "navigation.skills": "Skills", "navigation.about": "About", "navigation.contact": "Contact",
+    "navigation.open": "Open menu", "navigation.projects": "Projects", "navigation.skills": "Skills", "navigation.about": "About", "navigation.contact": "Contact", "theme.light": "Enable light theme", "theme.dark": "Enable dark theme",
     "hero.eyebrow": "Building in Augsburg · open to remote", "hero.lineOne": "Full-stack development", "hero.lineTwo": "with a personal signature.",
     "hero.intro": "I'm Florian Dumler. I build modern web applications and dive deep into Python automation – structured, curious and driven by the joy of finding good solutions.", "hero.projectsCta": "Explore projects",
     "projects.label": "Selected work", "projects.title": "Projects that grow with me.", "projects.intro": "Applications, experiments and long-term ideas – documented transparently from first concept to the next iteration.",
@@ -67,6 +67,7 @@ function applyLanguage(language) {
   toggle.textContent = language === "de" ? "EN" : "DE";
   toggle.setAttribute("aria-label", language === "de" ? "Switch to English" : "Auf Deutsch wechseln");
   localStorage.setItem("portfolio-language", language);
+  updateThemeLabel();
   renderProjects();
 }
 
@@ -92,7 +93,7 @@ document.documentElement.dataset.theme = preferredTheme;
 
 function updateThemeLabel() {
   const light = document.documentElement.dataset.theme === "light";
-  themeToggle.setAttribute("aria-label", light ? "Dunkles Farbschema aktivieren" : "Helles Farbschema aktivieren");
+  themeToggle.setAttribute("aria-label", translations[currentLanguage][light ? "theme.dark" : "theme.light"]);
 }
 
 themeToggle.addEventListener("click", () => {
