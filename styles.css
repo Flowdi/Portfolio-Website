@@ -131,7 +131,7 @@ h3 { line-height: 1.25; }
 .button-secondary { background: var(--surface); }
 .hero-visual { position: relative; max-width: 540px; justify-self: end; }
 .profile-frame { position: relative; border: 1px solid var(--line); padding: .7rem; background: var(--surface); box-shadow: var(--shadow); }
-.profile-frame img { width: 100%; aspect-ratio: 1 / 1.08; object-fit: cover; filter: saturate(.72) contrast(1.03); }
+.profile-frame img { width: 100%; height: clamp(360px, 29vw, 500px); object-fit: cover; object-position: center 68%; filter: saturate(.72) contrast(1.03); }
 .profile-label { position: static; margin-top: .7rem; padding: .8rem 1rem; display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; background: var(--surface-strong); border: 1px solid var(--line); color: var(--text); }
 .profile-label span, .profile-label small { display: block; }
 .profile-label small { color: #aeb4b8; }
@@ -223,6 +223,7 @@ h3 { line-height: 1.25; }
   .main-navigation.open { display: flex; }
   .hero { grid-template-columns: 1fr; }
   .hero-visual { width: min(88%, 520px); justify-self: center; }
+  .profile-frame img { height: min(90vw, 440px); }
   .section-heading, .contact-layout { grid-template-columns: 1fr; }
   .project-card { grid-column: span 6; }
   .about { grid-template-columns: 1fr; }
