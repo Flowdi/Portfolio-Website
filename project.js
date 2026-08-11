@@ -68,12 +68,12 @@ function render() {
   }
 }
 
-const savedTheme = localStorage.getItem("portfolio-theme") || "dark";
+const savedTheme = localStorage.getItem("portfolio-theme-v2") || "dark";
 document.documentElement.dataset.theme = savedTheme;
 document.querySelector(".theme-toggle").addEventListener("click", () => {
   const next = document.documentElement.dataset.theme === "dark" ? "light" : "dark";
   document.documentElement.dataset.theme = next;
-  localStorage.setItem("portfolio-theme", next);
+  localStorage.setItem("portfolio-theme-v2", next);
 });
 document.querySelector(".language-toggle").addEventListener("click", () => {
   language = language === "de" ? "en" : "de";
