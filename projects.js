@@ -65,7 +65,7 @@ const portfolioProjects = [
       ],
       learnings: "Ein professioneller Neuaufbau beginnt nicht mit Effekten, sondern mit Positionierung, guten Inhalten und einer Struktur, die Veränderung aushält. Besonders wichtig war die Entscheidung, Selbsteinschätzungen nicht als scheinbar exakte Prozentwerte zu zeigen, sondern Erfahrung ehrlich einzuordnen.",
       nextSteps: ["Projektseiten mit echten Screenshots erweitern", "Food-App als nächste ausführliche Fallstudie dokumentieren", "Social-Preview und finale Bildoptimierung ergänzen", "Spiel überarbeiten und wieder als Live-Demo veröffentlichen"],
-      image: "images/website2024.png",
+      image: "images/website2024.webp",
       imageAlt: "Frühere Version der Portfolio-Website von Florian Dumler",
       imageCaption: "Ausgangspunkt: die Portfolio-Version von 2024"
     },
@@ -94,7 +94,7 @@ const portfolioProjects = [
       ],
       learnings: "A professional rebuild does not begin with effects. It begins with positioning, strong content and a structure that can handle change. One particularly important decision was replacing seemingly precise skill percentages with honest descriptions of practical experience.",
       nextSteps: ["Add real screenshots to project pages", "Document the Food App as the next full case study", "Add a social preview and final image optimization", "Rebuild the game and publish it again as a live demo"],
-      image: "images/website2024.png",
+      image: "images/website2024.webp",
       imageAlt: "Earlier version of Florian Dumler's portfolio website",
       imageCaption: "Starting point: the 2024 portfolio version"
     }
