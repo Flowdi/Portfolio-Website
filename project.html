@@ -7,7 +7,7 @@
   <meta name="robots" content="index, follow">
   <link rel="icon" href="images/logo.png" type="image/png">
   <title>Projekt — Florian Dumler</title>
-  <link rel="stylesheet" href="styles.css?v=20260811">
+  <link rel="stylesheet" href="styles.css?v=20260811-2">
   <style>
     .project-detail { min-height: calc(100vh - 76px); padding-block: clamp(4rem, 9vw, 8rem); }
     .detail-back { color: var(--muted); font: .75rem "Cascadia Code", "SFMono-Regular", Consolas, monospace; text-decoration: none; text-transform: uppercase; letter-spacing: .08em; }
@@ -44,8 +44,8 @@
     [hidden] { display: none !important; }
     @media (max-width: 700px) { .detail-grid, .case-intro, .decision-grid { grid-template-columns: 1fr; } .detail-facts { grid-template-columns: 1fr; } .detail-fact { border-right: 0; border-bottom: 1px solid var(--line); } .highlight-list { grid-template-columns: 1fr; } }
   </style>
-  <script src="projects.js?v=20260811" defer></script>
-  <script src="project.js?v=20260811" defer></script>
+  <script src="projects.js?v=20260811-2" defer></script>
+  <script src="project.js?v=20260811-2" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Zum Inhalt springen</a>
@@ -78,7 +78,7 @@
           <div><p class="section-index">03 / <span id="context-label">Kontext</span></p><h2 id="introduction-title">Vom Lernprojekt zur professionellen Plattform.</h2></div>
           <p id="project-introduction"></p>
         </section>
-        <figure class="case-image"><img id="project-image" src="" alt="" loading="lazy"><figcaption id="project-image-caption"></figcaption></figure>
+        <figure id="project-figure" class="case-image"><img id="project-image" src="" alt="" loading="lazy"><figcaption id="project-image-caption"></figcaption></figure>
         <section class="case-intro"><div><p class="section-index">04 / <span id="problem-label">Problem</span></p><h2 id="problem-title">Was sich verändern musste.</h2></div><p id="project-problem"></p></section>
         <section class="case-intro"><div><p class="section-index">05 / <span id="approach-label">Ansatz</span></p><h2 id="approach-title">Ein bewusst schlankes Fundament.</h2></div><div><p id="project-approach"></p><ul id="project-highlights" class="highlight-list"></ul></div></section>
         <section><p class="section-index">06 / <span id="decisions-label">Entscheidungen</span></p><div id="project-decisions" class="decision-grid"></div></section>

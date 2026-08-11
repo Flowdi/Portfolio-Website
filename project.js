@@ -40,12 +40,26 @@ function render() {
     caseStudy.hidden = false;
     const textFields = { "project-introduction": copy.introduction, "project-problem": copy.problem, "project-approach": copy.approach, "project-result": copy.result, "project-learnings": copy.learnings };
     Object.entries(textFields).forEach(([id, value]) => { document.querySelector(`#${id}`).textContent = value; });
-    const labelFields = { "context-label": "context", "problem-label": "problem", "approach-label": "approach", "decisions-label": "decisions", "result-label": "result", "learning-label": "learning", "next-label": "next", "introduction-title": "introductionTitle", "problem-title": "problemTitle", "approach-title": "approachTitle", "result-title": "resultTitle", "learning-title": "learningTitle", "next-title": "nextTitle" };
+    const labelFields = { "context-label": "context", "problem-label": "problem", "approach-label": "approach", "decisions-label": "decisions", "result-label": "result", "learning-label": "learning", "next-label": "next" };
     Object.entries(labelFields).forEach(([id, key]) => { document.querySelector(`#${id}`).textContent = labels[language][key]; });
+    const titleFields = { "introduction-title": "introduction", "problem-title": "problem", "approach-title": "approach", "result-title": "result", "learning-title": "learning", "next-title": "next" };
+    Object.entries(titleFields).forEach(([id, key]) => {
+      const fallbackKey = key === "introduction" ? "introductionTitle" : `${key}Title`;
+      document.querySelector(`#${id}`).textContent = copy.sectionTitles?.[key] || labels[language][fallbackKey];
+    });
+    const figure = document.querySelector("#project-figure");
     const image = document.querySelector("#project-image");
-    image.src = copy.image;
-    image.alt = copy.imageAlt;
-    document.querySelector("#project-image-caption").textContent = copy.imageCaption;
+    if (copy.image) {
+      figure.hidden = false;
+      image.src = copy.image;
+      image.alt = copy.imageAlt;
+      document.querySelector("#project-image-caption").textContent = copy.imageCaption;
+    } else {
+      figure.hidden = true;
+      image.removeAttribute("src");
+      image.alt = "";
+      document.querySelector("#project-image-caption").textContent = "";
+    }
     document.querySelector("#project-highlights").innerHTML = copy.highlights.map(item => `<li>${item}</li>`).join("");
     document.querySelector("#project-decisions").innerHTML = copy.decisions.map((item, index) => `<article class="decision-card"><span>0${index + 1}</span><h3>${item.title}</h3><p>${item.text}</p></article>`).join("");
     document.querySelector("#project-next").innerHTML = copy.nextSteps.map(item => `<li>${item}</li>`).join("");
