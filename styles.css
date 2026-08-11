@@ -135,7 +135,7 @@ h3 { line-height: 1.25; }
 .profile-label { position: static; margin-top: .7rem; padding: .8rem 1rem; display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; background: var(--surface-strong); border: 1px solid var(--line); color: var(--text); }
 .profile-label span, .profile-label small { display: block; }
 .profile-label small { color: #aeb4b8; }
-.code-card { position: absolute; right: -2rem; top: -2rem; width: 220px; padding: 1rem; display: grid; background: var(--surface-strong); border: 1px solid var(--line); box-shadow: var(--shadow); font: .73rem/1.7 "Cascadia Code", "SFMono-Regular", Consolas, monospace; }
+.code-card { position: absolute; right: 0; top: -2rem; width: 220px; padding: 1rem; display: grid; background: var(--surface-strong); border: 1px solid var(--line); box-shadow: var(--shadow); font: .73rem/1.7 "Cascadia Code", "SFMono-Regular", Consolas, monospace; }
 .code-comment { color: var(--muted); }
 
 .section-heading { display: grid; grid-template-columns: 1.25fr .75fr; gap: 3rem; margin-bottom: clamp(3rem, 6vw, 5rem); align-items: end; }
@@ -235,7 +235,7 @@ h3 { line-height: 1.25; }
   .site-header { padding-inline: 1rem; gap: .45rem; }
   .hero { min-height: auto; padding-top: 5rem; }
   h1 { font-size: clamp(2.65rem, 13vw, 4rem); }
-  .code-card { right: -1rem; top: -3rem; width: 190px; }
+  .code-card { right: 0; top: -3rem; width: 190px; }
   .profile-label { align-items: flex-start; flex-direction: column; gap: .2rem; }
   .project-card { min-height: 390px; }
   .project-card { grid-column: span 12; }
