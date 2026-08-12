@@ -1,45 +1,99 @@
-# Florian Dumler — Portfolio
+# Florian Dumler — Portfolio Website
 
-Quellcode für die persönliche Portfolio-Website [floriandumler.de](https://www.floriandumler.de).
+Quellcode der persönlichen Portfolio-Website von Florian Dumler.
 
-## Ziel
+**Live:** [www.floriandumler.de](https://www.floriandumler.de)  
+**Status:** produktiv veröffentlicht · derzeit in einer geplanten Ruhephase
 
-Die Website präsentiert Florian Dumler als Full-Stack Developer mit Fokus auf Webentwicklung und Python-Automatisierung. Sie wird schrittweise zu einer zweisprachigen, zugänglichen und leicht erweiterbaren Projektdokumentation ausgebaut.
+## Über das Projekt
 
-## Aktueller Funktionsumfang
+Die Website präsentiert Florian Dumler als Full-Stack Developer aus Augsburg mit Fokus auf Webentwicklung, Python und Automatisierung. Sie verbindet eine seriöse, persönliche Darstellung mit einer eigenständigen technisch-futuristischen Gestaltung.
 
-- responsive Startseite
+Das Portfolio wurde als bewusst schlanke statische Website umgesetzt. Es benötigt kein Framework und lässt sich dadurch schnell ausliefern, einfach warten und kontrolliert auf einem eigenen Server betreiben.
+
+## Funktionsumfang
+
+- responsive Darstellung für Desktop, Tablet und Smartphone
 - Dark Mode als Standard und optionaler Light Mode
-- deutsche und englische Inhalte
-- zentral gepflegte Projektdaten in `projects.js`
-- dynamische Projektdetailseiten über `project.html?id=...`
+- vollständiger Sprachwechsel zwischen Deutsch und Englisch
+- barrierearme Navigation und Bedienung per Tastatur
+- zentral gepflegte Projektinhalte in `projects.js`
+- dynamisch erzeugte Projektkarten und Projektdetailseiten
+- ausführliche Case Studies für ausgewählte Projekte
 - automatisch berechnetes Alter
-- bestehendes JavaScript-Spiel unter `game/`
-- dokumentierte produktive Server-Härtung unter `server/`
+- geschützter Zertifikatsviewer innerhalb der Website
+- bestehender JavaScript-Plattformer unter `game/`
+- individuelle Favicons und Social-Preview-Grafik
+- grundlegende technische SEO-Daten, Sitemap und strukturierte Personendaten
+
+## Enthaltene Projekte
+
+- Food-App — in Entwicklung
+- JavaScript-Plattformer — in Überarbeitung
+- Portfolio Website — abgeschlossen
+- Creative Portfolio Experiment — abgeschlossen
+- Fashion & Cooking Blog Website — geplant
+
+## Technologie
+
+- HTML5
+- CSS3
+- Vanilla JavaScript
+- Nginx
+- Ubuntu Server bei Hetzner
+- Let's Encrypt für HTTPS
+- Git und GitHub
+
+Es sind keine Installation, kein Build-Prozess und keine externen Laufzeitabhängigkeiten erforderlich.
 
 ## Projektstruktur
 
 ```text
 index.html       Startseite
 project.html     Vorlage für Projektdetailseiten
-projects.js      zentrale Projektinhalte
-script.js        Startseitenlogik, Sprache und Theme
+projects.js      zentrale Projekt- und Case-Study-Inhalte
+script.js        Startseitenlogik, Sprache, Theme und Zertifikate
 project.js       Logik der Projektdetailseiten
 styles.css       gemeinsames Designsystem
-images/          Bilder und Grafiken
-certificates/    zwei ausgewählte Zertifikatsnachweise
+images/          optimierte Bilder, Favicons und Social Preview
+certificates/    ausgewählte Zertifikatsnachweise
 game/            JavaScript-Plattformer
 server/          dokumentierte Nginx- und SSH-Härtung
 ```
 
 ## Sicherheit
 
-Die produktive Website erzwingt HTTPS, blockiert die Einbettung in fremde Frames, verwendet eine restriktive Content Security Policy und deaktiviert nicht benötigte Serverfunktionen. Die Konfigurationsvorlagen und Wartungshinweise befinden sich in `server/`.
+Die produktive Website und der Server sind unter anderem durch folgende Maßnahmen abgesichert:
+
+- HTTPS mit TLS 1.2 und TLS 1.3 sowie HSTS
+- Schutz vor Einbettung und Clickjacking
+- restriktive Content Security Policy
+- Schutz vor MIME-Sniffing und unnötiger Referrer-Weitergabe
+- deaktivierte, nicht benötigte Browser-Schnittstellen
+- ausschließlich erlaubte HTTP-Methoden für die statische Website
+- Sperre für versteckte und typische Sicherungsdateien
+- keine PHP-Ausführung
+- Firewall, Fail2ban und automatische Sicherheitsupdates
+- SSH-Zugriff ausschließlich per Schlüssel
+- automatische Erneuerung des TLS-Zertifikats
+
+Die produktiven Konfigurationsvorlagen und Wartungshinweise befinden sich unter `server/`. Änderungen an eingebetteten JSON-LD- oder CSS-Blöcken können eine Aktualisierung der dort dokumentierten CSP-Hashes erforderlich machen.
 
 ## Lokale Vorschau
 
-Die Website ist statisch und benötigt keine Installation. Für eine lokale Vorschau kann ein einfacher Webserver im Projektordner gestartet werden, beispielsweise über die entsprechende Funktion des verwendeten Editors.
+Die Website sollte über einen lokalen Webserver geöffnet werden, damit Pfade und browserseitige Funktionen dem Produktivbetrieb entsprechen. Hierfür kann beispielsweise die Vorschaufunktion eines Editors oder ein beliebiger statischer Entwicklungsserver verwendet werden.
 
 ## Veröffentlichung
 
-Die produktive Website wird bei Hetzner unter `www.floriandumler.de` betrieben. Änderungen werden erst nach Prüfung gezielt veröffentlicht.
+Die Website wird unter [www.floriandumler.de](https://www.floriandumler.de) auf einem eigenen Hetzner-Server mit Nginx betrieben. Neue Versionen werden erst nach Prüfung veröffentlicht. Vor einem produktiven Austausch wird der bisherige Stand serverseitig gesichert.
+
+## Nächste mögliche Ausbaustufen
+
+- Food-App als vollständige Case Study ausarbeiten
+- JavaScript-Plattformer technisch und visuell überarbeiten
+- zweites persönliches Bild ergänzen
+- rechtliche Seiten final klären
+- externe Server-Backups einrichten
+- Deployment weiter automatisieren
+
+Der aktuelle Stand bleibt zunächst bewusst unverändert, damit Gestaltung, Inhalte und Live-Betrieb mit etwas Abstand beurteilt werden können.
