@@ -88,7 +88,7 @@ function observeReveals() {
 }
 
 const themeToggle = document.querySelector(".theme-toggle");
-const preferredTheme = localStorage.getItem("portfolio-theme") || "dark";
+const preferredTheme = localStorage.getItem("portfolio-theme-v2") || "dark";
 document.documentElement.dataset.theme = preferredTheme;
 
 function updateThemeLabel() {
@@ -99,7 +99,7 @@ function updateThemeLabel() {
 themeToggle.addEventListener("click", () => {
   const next = document.documentElement.dataset.theme === "dark" ? "light" : "dark";
   document.documentElement.dataset.theme = next;
-  localStorage.setItem("portfolio-theme", next);
+  localStorage.setItem("portfolio-theme-v2", next);
   updateThemeLabel();
 });
 
