@@ -15,6 +15,7 @@ Die Website präsentiert Florian Dumler als Full-Stack Developer mit Fokus auf W
 - dynamische Projektdetailseiten über `project.html?id=...`
 - automatisch berechnetes Alter
 - bestehendes JavaScript-Spiel unter `game/`
+- dokumentierte produktive Server-Härtung unter `server/`
 
 ## Projektstruktur
 
@@ -28,7 +29,12 @@ styles.css       gemeinsames Designsystem
 images/          Bilder und Grafiken
 certificates/    zwei ausgewählte Zertifikatsnachweise
 game/            JavaScript-Plattformer
+server/          dokumentierte Nginx- und SSH-Härtung
 ```
+
+## Sicherheit
+
+Die produktive Website erzwingt HTTPS, blockiert die Einbettung in fremde Frames, verwendet eine restriktive Content Security Policy und deaktiviert nicht benötigte Serverfunktionen. Die Konfigurationsvorlagen und Wartungshinweise befinden sich in `server/`.
 
 ## Lokale Vorschau
 
