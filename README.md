@@ -2,7 +2,8 @@
 
 Quellcode der persönlichen Portfolio-Website von Florian Dumler.
 
-**Live:** [www.floriandumler.de](https://www.floriandumler.de)  
+**Live:** [www.floriandumler.de](https://www.floriandumler.de)
+
 **Status:** produktiv veröffentlicht · derzeit in einer geplanten Ruhephase
 
 ## Über das Projekt
