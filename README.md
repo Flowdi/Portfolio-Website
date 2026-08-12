@@ -4,7 +4,7 @@ Quellcode für die persönliche Portfolio-Website [floriandumler.de](https://www
 
 ## Ziel
 
-Die Website präsentiert Florian Dumler als Full-Stack Developer mit Fokus auf Webentwicklung und Python-Automatisierung. Sie wird schrittweise zu einer zweisprachigen, zugänglichen und leicht erweiterbaren Projektdokumentation ausgebaut.
+Die Website präsentiert mich als Full-Stack Developer mit Fokus auf Webentwicklung und Python-Automatisierung. Sie wird schrittweise zu einer zweisprachigen, zugänglichen und leicht erweiterbaren Projektdokumentation ausgebaut.
 
 ## Aktueller Funktionsumfang
 
@@ -42,4 +42,4 @@ Die Website ist statisch und benötigt keine Installation. Für eine lokale Vors
 
 ## Veröffentlichung
 
-Die produktive Website wird bei Hetzner unter `www.floriandumler.de` betrieben. Änderungen werden erst nach Prüfung gezielt veröffentlicht.
+Die produktive Website wird unter `www.floriandumler.de` betrieben. Änderungen werden erst nach Prüfung gezielt veröffentlicht.
