@@ -4,7 +4,7 @@ Quellcode der persönlichen Portfolio-Website von Florian Dumler.
 
 **Live:** [www.floriandumler.de](https://www.floriandumler.de)
 
-**Status:** produktiv veröffentlicht · derzeit in einer geplanten Ruhephase
+**Status:** produktiv veröffentlicht
 
 ## Über das Projekt
 
@@ -86,15 +86,4 @@ Die Website sollte über einen lokalen Webserver geöffnet werden, damit Pfade u
 
 ## Veröffentlichung
 
-Die Website wird unter [www.floriandumler.de](https://www.floriandumler.de) auf einem eigenen Hetzner-Server mit Nginx betrieben. Neue Versionen werden erst nach Prüfung veröffentlicht. Vor einem produktiven Austausch wird der bisherige Stand serverseitig gesichert.
-
-## Nächste mögliche Ausbaustufen
-
-- Food-App als vollständige Case Study ausarbeiten
-- JavaScript-Plattformer technisch und visuell überarbeiten
-- zweites persönliches Bild ergänzen
-- rechtliche Seiten final klären
-- externe Server-Backups einrichten
-- Deployment weiter automatisieren
-
-Der aktuelle Stand bleibt zunächst bewusst unverändert, damit Gestaltung, Inhalte und Live-Betrieb mit etwas Abstand beurteilt werden können.
+Die produktive Website wird unter `www.floriandumler.de` betrieben. Änderungen werden erst nach Prüfung gezielt veröffentlicht.
