@@ -23,14 +23,14 @@ Das Portfolio wurde als bewusst schlanke statische Website umgesetzt. Es benöti
 - ausführliche Case Studies für ausgewählte Projekte
 - automatisch berechnetes Alter
 - geschützter Zertifikatsviewer innerhalb der Website
-- bestehender JavaScript-Plattformer unter `game/`
+- spielbarer JavaScript-Plattformer Dung Dash unter `game/`
 - individuelle Favicons und Social-Preview-Grafik
 - grundlegende technische SEO-Daten, Sitemap und strukturierte Personendaten
 
 ## Enthaltene Projekte
 
 - Food-App — in Entwicklung
-- JavaScript-Plattformer — in Überarbeitung
+- Dung Dash — spielbar
 - Portfolio Website — abgeschlossen
 - Creative Portfolio Experiment — abgeschlossen
 - Fashion & Cooking Blog Website — geplant

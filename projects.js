@@ -20,17 +20,99 @@ const portfolioProjects = [
     id: "javascript-platformer",
     number: "02",
     category: "Game Development",
-    statusKey: "project.rebuild",
-    technologies: ["JavaScript", "Canvas", "CSS"],
+    statusKey: "project.playable",
+    technologies: ["JavaScript", "Canvas", "Game Design"],
+    links: [
+      { label: "Live-Demo", url: "game/" },
+      { label: "GitHub", url: "https://github.com/Flowdi/dung-dash" }
+    ],
     de: {
-      title: "JavaScript-Plattformer",
-      summary: "Mein erstes eigenes Spiel – ein browserbasierter Plattformer, der als nächstes technisch, visuell und für mobile Bedienung überarbeitet wird.",
-      challenge: "Spiellogik, Kollisionen, Bewegung und Levelablauf wurden ohne Game Engine im Browser umgesetzt."
+      title: "Dung Dash",
+      summary: "Ein spielbarer Canvas-Plattformer mit mehreren Leveln, Touchsteuerung, Missionen, Achievements und lokal gespeicherten Bestleistungen.",
+      challenge: "Spielphysik, Kollisionen, Kameraführung, Levelsystem und Fortschritt wurden ohne Game Engine als modulare JavaScript-Anwendung umgesetzt.",
+      period: "2024–2026 · spielbare Version",
+      role: "Konzept, Game Design & Entwicklung",
+      introduction: "Dung Dash begann als mein erstes eigenes Browser-Spiel und als praktischer Einstieg in Canvas, Spiellogik und Kollisionsberechnung. Aus einem einfachen horizontalen Plattformer mit roten Blöcken ist inzwischen ein vollständigeres Spiel mit eigenem visuellen Stil, mehreren Leveln und dauerhaftem Fortschritt geworden.",
+      problem: "Ein Plattformer muss sich unmittelbar und verlässlich anfühlen. Bewegung, Sprünge, Plattformkollisionen und Kameraführung dürfen auch bei unterschiedlichen Bildschirmgrößen nicht auseinanderfallen. Mit wachsendem Funktionsumfang mussten außerdem Leveldaten, Spielfortschritt und Sondermechaniken aus einer zunächst monolithischen Datei in klar getrennte Verantwortungsbereiche überführt werden.",
+      approach: "Die aktuelle Version nutzt wartbare ES-Module für Spielzustände, Eingaben, Physik, Level, Rendering, Score und Speicherung. Ein eigener Build erzeugt daraus ein direkt im Browser startbares Bundle. Die Level werden aus Daten aufgebaut und kombinieren feste, bewegte, zeitgesteuerte, zerbrechliche und beschleunigende Plattformen mit Checkpoints, Gefahren und unterschiedlichen visuellen Themen.",
+      result: "Entstanden ist eine öffentlich spielbare Kampagne mit drei regulären Leveln und dem vertikalen Royal-Flush-Modus. Timer, Combo-System, Medaillen, Missionen, Achievements und lokale Rekorde geben den Läufen ein klares Ziel. Tastatur- und Touchsteuerung machen das Spiel auf Desktop- und Mobilgeräten bedienbar.",
+      highlights: [
+        "Drei datengetriebene Level plus vertikaler Royal-Flush-Modus",
+        "Responsive Tastatur- und Touchsteuerung",
+        "Timer, Combo-Score sowie Bronze-, Silber- und Goldmedaillen",
+        "Persönliche Bestzeiten, Highscores und Statistiken im lokalen Speicher",
+        "Levelmissionen, sechs Achievements und schrittweise Freischaltung",
+        "Bewegte, zeitgesteuerte, zerbrechliche und beschleunigende Plattformen",
+        "Wasserstrahlen, rotierende Bürsten, Checkpoints und Respawn-System",
+        "58 automatisierte Build- und Gameplay-Tests"
+      ],
+      decisions: [
+        { title: "Ohne Game Engine", text: "Canvas und eigenes JavaScript machen Physik, Rendering und Zustandswechsel vollständig nachvollziehbar und bilden eine direkte Lernumgebung für Spiellogik." },
+        { title: "Level als Daten", text: "Aufbau, Ziele, Missionen, Gefahren und visuelle Themen sind vom allgemeinen Spielablauf getrennt. Neue Level lassen sich ergänzen, ohne die Hauptschleife neu zu schreiben." },
+        { title: "Fortschritt bleibt lokal", text: "Bestzeiten, Highscores, Missionen und Achievements werden fehlertolerant im Browser gespeichert. Das Spiel benötigt dafür weder Konto noch Backend." }
+      ],
+      learnings: "Mit wachsendem Umfang wurde besonders deutlich, wie wichtig getrennte Spielzustände und testbare Module sind. Gute Spielmechanik entsteht nicht nur durch neue Features, sondern durch konsistente Kollisionen, verlässliche Eingaben und viele kleine Iterationen am Bewegungsgefühl.",
+      nextSteps: [
+        "Balancing von Zeiten, Scores und Missionszielen mit weiteren Testläufen verfeinern",
+        "Grafiken und Dateigrößen für schnellere mobile Ladezeiten weiter optimieren",
+        "Zusätzliches Feedback für Treffer, Combos und besondere Plattformen ergänzen",
+        "Neue Level nur als klar abgegrenzte spätere Erweiterungen entwickeln"
+      ],
+      sectionTitles: {
+        introduction: "Vom ersten Canvas-Versuch zum spielbaren Projekt.",
+        problem: "Spielgefühl braucht verlässliche Grundlagen.",
+        approach: "Modulare Spiellogik statt wachsender Einzeldatei.",
+        result: "Eine Kampagne mit Fortschritt und Wiederspielwert.",
+        learning: "Gute Mechanik entsteht in vielen Iterationen.",
+        next: "Spielbar – mit Raum für gezielte Erweiterungen."
+      },
+      image: "game/assets/themes/festival-background.png",
+      imageAlt: "Festival-Level aus dem Browser-Spiel Dung Dash",
+      imageCaption: "Dung Dash · eines der eigenständigen Levelthemen"
     },
     en: {
-      title: "JavaScript Platformer",
-      summary: "My first original game – a browser-based platformer that will next be rebuilt technically, visually and for mobile controls.",
-      challenge: "Game logic, collisions, movement and level progression were implemented in the browser without a game engine."
+      title: "Dung Dash",
+      summary: "A playable Canvas platformer with multiple levels, touch controls, missions, achievements and locally stored personal records.",
+      challenge: "Game physics, collisions, camera movement, the level system and progression were built as a modular JavaScript application without a game engine.",
+      period: "2024–2026 · playable version",
+      role: "Concept, game design & development",
+      introduction: "Dung Dash started as my first original browser game and a practical introduction to Canvas, game logic and collision detection. What began as a simple horizontal platformer with red blocks has grown into a more complete game with a distinct visual style, multiple levels and persistent progress.",
+      problem: "A platformer needs to feel immediate and reliable. Movement, jumping, platform collisions and camera tracking must remain consistent across different viewport sizes. As its scope grew, level data, progression and special mechanics also had to move from an initially monolithic file into clearly separated responsibilities.",
+      approach: "The current version uses maintainable ES modules for game states, input, physics, levels, rendering, scoring and storage. A custom build turns these modules into a bundle that launches directly in the browser. Data-driven levels combine solid, moving, timed, fragile and bounce platforms with checkpoints, hazards and individual visual themes.",
+      result: "The result is a publicly playable campaign with three regular levels and the vertical Royal Flush mode. A timer, combo system, medals, missions, achievements and local records give each run a clear objective. Keyboard and touch controls make the game usable on desktop and mobile devices.",
+      highlights: [
+        "Three data-driven levels plus a vertical Royal Flush mode",
+        "Responsive keyboard and touch controls",
+        "Timer, combo score and bronze, silver and gold medals",
+        "Personal best times, high scores and statistics in local storage",
+        "Level missions, six achievements and progressive unlocking",
+        "Moving, timed, fragile, conveyor and bounce platforms",
+        "Water jets, rotating brushes, checkpoints and respawning",
+        "58 automated build and gameplay tests"
+      ],
+      decisions: [
+        { title: "No game engine", text: "Canvas and custom JavaScript keep physics, rendering and state transitions fully understandable and create a direct learning environment for game logic." },
+        { title: "Levels as data", text: "Layouts, objectives, missions, hazards and visual themes are separated from the general game flow. New levels can be added without rewriting the main loop." },
+        { title: "Progress stays local", text: "Best times, high scores, missions and achievements are stored fault-tolerantly in the browser. The game requires neither an account nor a backend." }
+      ],
+      learnings: "As the scope grew, the value of separate game states and testable modules became especially clear. Good game mechanics are not created by features alone, but by consistent collisions, reliable input and many small iterations on movement feel.",
+      nextSteps: [
+        "Refine time, score and mission balancing through further playtesting",
+        "Further optimize graphics and file sizes for faster mobile loading",
+        "Add more feedback for hits, combos and special platforms",
+        "Develop new levels only as clearly scoped future expansions"
+      ],
+      sectionTitles: {
+        introduction: "From a first Canvas experiment to a playable project.",
+        problem: "Game feel depends on reliable foundations.",
+        approach: "Modular game logic instead of a growing single file.",
+        result: "A campaign with progression and replay value.",
+        learning: "Good mechanics emerge through iteration.",
+        next: "Playable, with room for focused extensions."
+      },
+      image: "game/assets/themes/festival-background.png",
+      imageAlt: "Festival level from the browser game Dung Dash",
+      imageCaption: "Dung Dash · one of its distinct level themes"
     }
   },
   {
@@ -64,7 +146,7 @@ const portfolioProjects = [
         { title: "Persönlich statt generisch", text: "Typografie, technische Raster, Neonorange und Fotografie verbinden eine seriöse Oberfläche mit einer eigenen, wärmeren Handschrift." }
       ],
       learnings: "Ein professioneller Neuaufbau beginnt nicht mit Effekten, sondern mit Positionierung, guten Inhalten und einer Struktur, die Veränderung aushält. Besonders wichtig war die Entscheidung, Selbsteinschätzungen nicht als scheinbar exakte Prozentwerte zu zeigen, sondern Erfahrung ehrlich einzuordnen.",
-      nextSteps: ["Projektseiten mit echten Screenshots erweitern", "Food-App als nächste ausführliche Fallstudie dokumentieren", "Social-Preview und finale Bildoptimierung ergänzen", "Spiel überarbeiten und wieder als Live-Demo veröffentlichen"],
+      nextSteps: ["Projektseiten mit echten Screenshots erweitern", "Food-App als nächste ausführliche Fallstudie dokumentieren", "Social-Preview und finale Bildoptimierung ergänzen", "Dung Dash durch Balancing und weitere Level ausbauen"],
       image: "images/website2024.webp",
       imageAlt: "Frühere Version der Portfolio-Website von Florian Dumler",
       imageCaption: "Ausgangspunkt: die Portfolio-Version von 2024"
@@ -93,7 +175,7 @@ const portfolioProjects = [
         { title: "Personal, not generic", text: "Typography, technical grids, neon orange and photography combine a serious interface with a warmer personal signature." }
       ],
       learnings: "A professional rebuild does not begin with effects. It begins with positioning, strong content and a structure that can handle change. One particularly important decision was replacing seemingly precise skill percentages with honest descriptions of practical experience.",
-      nextSteps: ["Add real screenshots to project pages", "Document the Food App as the next full case study", "Add a social preview and final image optimization", "Rebuild the game and publish it again as a live demo"],
+      nextSteps: ["Add real screenshots to project pages", "Document the Food App as the next full case study", "Add a social preview and final image optimization", "Expand Dung Dash through balancing and additional levels"],
       image: "images/website2024.webp",
       imageAlt: "Earlier version of Florian Dumler's portfolio website",
       imageCaption: "Starting point: the 2024 portfolio version"
