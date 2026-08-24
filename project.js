@@ -23,7 +23,10 @@ function render() {
   document.querySelector("#project-summary").textContent = copy.summary;
   document.querySelector("#project-challenge").textContent = copy.challenge;
   document.querySelector("#project-technologies").innerHTML = project.technologies.map(item => `<li>${item}</li>`).join("");
-  document.querySelector("#project-links").innerHTML = (project.links || []).map(link => `<a class="button button-secondary" href="${link.url}" target="_blank" rel="noopener noreferrer">${link.label} <span aria-hidden="true">↗</span></a>`).join("");
+  document.querySelector("#project-links").innerHTML = (project.links || []).map(link => `<a class="button button-secondary${link.label === "Live-Demo" ? " project-live-link" : ""}" href="${link.url}" target="_blank" rel="noopener noreferrer">${link.label} <span aria-hidden="true">↗</span></a>`).join("");
+  const playCta = document.querySelector("#play-project-cta");
+  playCta.hidden = project.id !== "javascript-platformer";
+  document.querySelector("#play-project-label").textContent = language === "de" ? "Spiel starten" : "Play game";
   document.querySelector("#challenge-title").textContent = labels[language].challenge;
   document.querySelector("#status-title").textContent = labels[language].status;
   const statusLabelKey = project.statusKey.replace("project.", "");

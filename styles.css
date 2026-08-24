@@ -257,3 +257,50 @@ h3 { line-height: 1.25; }
   *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
   .reveal { opacity: 1; transform: none; }
 }
+
+.project-live-link {
+  border-color: var(--accent);
+  box-shadow: inset 0 0 0 1px var(--accent);
+}
+
+.play-project-cta {
+  position: fixed;
+  right: clamp(1rem, 2.5vw, 2.5rem);
+  top: 50%;
+  z-index: 30;
+  display: flex;
+  align-items: center;
+  gap: .65rem;
+  padding: .85rem 1rem;
+  border: 1px solid var(--accent);
+  background: var(--bg);
+  color: var(--text);
+  font: .72rem "Cascadia Code", "SFMono-Regular", Consolas, monospace;
+  letter-spacing: .06em;
+  text-decoration: none;
+  text-transform: uppercase;
+  transform: translateY(-50%);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, .28);
+  transition: background-color .2s ease, color .2s ease, transform .2s ease;
+}
+
+.play-project-cta:hover,
+.play-project-cta:focus-visible {
+  background: var(--accent);
+  color: #0b0d0e;
+  transform: translateY(-50%) translateX(-.2rem);
+}
+
+@media (max-width: 900px) {
+  .play-project-cta {
+    top: auto;
+    right: 1rem;
+    bottom: 1rem;
+    transform: none;
+  }
+
+  .play-project-cta:hover,
+  .play-project-cta:focus-visible {
+    transform: translateY(-.2rem);
+  }
+}
