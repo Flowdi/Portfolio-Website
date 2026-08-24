@@ -266,7 +266,7 @@ h3 { line-height: 1.25; }
 .play-project-cta {
   position: fixed;
   right: clamp(1rem, 2.5vw, 2.5rem);
-  top: 50%;
+  bottom: clamp(1rem, 2.5vw, 2.5rem);
   z-index: 30;
   display: flex;
   align-items: center;
@@ -279,7 +279,6 @@ h3 { line-height: 1.25; }
   letter-spacing: .06em;
   text-decoration: none;
   text-transform: uppercase;
-  transform: translateY(-50%);
   box-shadow: 0 12px 30px rgba(0, 0, 0, .28);
   transition: background-color .2s ease, color .2s ease, transform .2s ease;
 }
@@ -288,7 +287,7 @@ h3 { line-height: 1.25; }
 .play-project-cta:focus-visible {
   background: var(--accent);
   color: #0b0d0e;
-  transform: translateY(-50%) translateX(-.2rem);
+  transform: translateY(-.2rem);
 }
 
 @media (max-width: 900px) {
