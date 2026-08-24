@@ -187,7 +187,10 @@ const portfolioProjects = [
     category: "Interactive UI",
     statusKey: "project.complete",
     technologies: ["JavaScript", "Canvas", "CSS"],
-    links: [{ label: "GitHub", url: "https://github.com/Flowdi/Creative-Portfolio-Interactive-UI-Experiment" }],
+    links: [
+      { label: "Live-Demo", url: "creative-portfolio/" },
+      { label: "GitHub", url: "https://github.com/Flowdi/Creative-Portfolio-Interactive-UI-Experiment" }
+    ],
     de: {
       title: "Creative Portfolio Experiment",
       summary: "Ein experimentelles, zweisprachiges Portfolio mit animierter Space-Oberfläche, Orbit-Navigation und modular aufgebautem JavaScript-Frontend.",
@@ -213,6 +216,9 @@ const portfolioProjects = [
       ],
       learnings: "Experimentelles Design braucht besonders klare technische Grenzen. Animationen wirken nur dann überzeugend, wenn Eingaben zuverlässig bleiben, Fokuszustände sichtbar sind und schwächere Geräte nicht unnötig belastet werden.",
       nextSteps: ["Weitere reale Python- und Automatisierungsprojekte ergänzen", "Interaktionen und Übersetzungsdaten automatisiert testen", "Canvas-Last auf mobilen Geräten weiter reduzieren", "Projektvorschauen und Dokumentation ausbauen"],
+      image: "creative-portfolio/assets/projects/portfolio-v2.jpg",
+      imageAlt: "Vorschau des Creative Portfolio Experiments mit Space-Oberfläche",
+      imageCaption: "Creative Portfolio Experiment · interaktive Space-Navigation",
       sectionTitles: {
         introduction: "Ein Portfolio als interaktive Erfahrung.",
         problem: "Kreativität ohne Kontrollverlust.",
@@ -247,6 +253,9 @@ const portfolioProjects = [
       ],
       learnings: "Experimental design needs particularly clear technical boundaries. Animation is only convincing when input remains reliable, focus states stay visible and less powerful devices are not burdened unnecessarily.",
       nextSteps: ["Add more real Python and automation projects", "Automate tests for interactions and translation data", "Further reduce canvas load on mobile devices", "Expand project previews and documentation"],
+      image: "creative-portfolio/assets/projects/portfolio-v2.jpg",
+      imageAlt: "Preview of the Creative Portfolio Experiment with its space interface",
+      imageCaption: "Creative Portfolio Experiment · interactive space navigation",
       sectionTitles: {
         introduction: "A portfolio as an interactive experience.",
         problem: "Creativity without losing control.",
