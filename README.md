@@ -24,6 +24,7 @@ Das Portfolio wurde als bewusst schlanke statische Website umgesetzt. Es benöti
 - automatisch berechnetes Alter
 - geschützter Zertifikatsviewer innerhalb der Website
 - spielbarer JavaScript-Plattformer Dung Dash unter `game/`
+- interaktives Creative Portfolio Experiment unter `creative-portfolio/`
 - individuelle Favicons und Social-Preview-Grafik
 - grundlegende technische SEO-Daten, Sitemap und strukturierte Personendaten
 
@@ -59,6 +60,7 @@ styles.css       gemeinsames Designsystem
 images/          optimierte Bilder, Favicons und Social Preview
 certificates/    ausgewählte Zertifikatsnachweise
 game/            JavaScript-Plattformer
+creative-portfolio/ eigenständige interaktive Portfolio-Demo
 server/          dokumentierte Nginx- und SSH-Härtung
 ```
 

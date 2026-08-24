@@ -1,0 +1,63 @@
+/* ================== STAR BUTTON ================== */
+.star-button {
+  position: absolute;
+  bottom: 80px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 5;
+  overflow: hidden;
+  box-shadow: 0 0 40px rgba(199, 92, 92, 0);
+  animation: none;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  touch-action: none;
+}
+
+.star-button:focus-visible {
+  outline: 3px solid #8fdfff;
+  outline-offset: 5px;
+}
+
+#boostCore {
+  width: 100%;
+  height: 100%;
+}
+
+.boost-hint {
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 14px;
+  color: #8fdfff;
+  opacity: 0.9;
+  pointer-events: none;
+  text-shadow: 0 0 8px rgba(0, 200, 255, 0.8);
+  animation: boostHintFade 7s ease-out forwards;
+  z-index: 6;
+}
+
+@keyframes boostHintFade {
+  0%   { opacity: 0; transform: translateX(-50%) translateY(10px); }
+  15%  { opacity: 1; transform: translateX(-50%) translateY(0); }
+  70%  { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+/* user hovers sphere -> better visual */
+.star-button:hover + .boost-hint {
+  opacity: 1 !important;
+  animation: none;
+}
+
+@media (max-width: 520px), (max-height: 620px) {
+  .star-button { width: 130px; height: 130px; }
+  #boostCore { transform: scale(.72); transform-origin: top left; }
+  .boost-hint { top: auto; bottom: 58px; width: min(90vw, 360px); text-align: center; }
+}
