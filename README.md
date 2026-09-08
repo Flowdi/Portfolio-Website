@@ -2,7 +2,7 @@
 
 Quellcode der persönlichen Portfolio-Website von Florian Dumler.
 
-**Live:** [www.floriandumler.de](https://www.floriandumler.de)
+**Live:** [florian-dumler.de](https://florian-dumler.de)
 
 **Status:** produktiv veröffentlicht
 
@@ -88,4 +88,4 @@ Die Website sollte über einen lokalen Webserver geöffnet werden, damit Pfade u
 
 ## Veröffentlichung
 
-Die produktive Website wird unter `www.floriandumler.de` betrieben. Änderungen werden erst nach Prüfung gezielt veröffentlicht.
+Die produktive Website wird unter `florian-dumler.de` betrieben. Änderungen werden erst nach Prüfung gezielt veröffentlicht.

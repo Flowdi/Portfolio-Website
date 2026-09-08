@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://www.floriandumler.de/</loc>
+    <loc>https://florian-dumler.de/</loc>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.floriandumler.de/project.html?id=food-app</loc>
+    <loc>https://florian-dumler.de/project.html?id=food-app</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.floriandumler.de/project.html?id=javascript-platformer</loc>
+    <loc>https://florian-dumler.de/project.html?id=javascript-platformer</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.floriandumler.de/project.html?id=portfolio-v1</loc>
+    <loc>https://florian-dumler.de/project.html?id=portfolio-v1</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.floriandumler.de/project.html?id=creative-portfolio-experiment</loc>
+    <loc>https://florian-dumler.de/project.html?id=creative-portfolio-experiment</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.floriandumler.de/project.html?id=fashion-cooking-blog</loc>
+    <loc>https://florian-dumler.de/project.html?id=fashion-cooking-blog</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
