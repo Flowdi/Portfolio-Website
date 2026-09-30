@@ -259,24 +259,6 @@ H3 {
 	padding: 20px 10px;
   }
   
-  #linkedin {
-	height: 45px;
-	width: 100%;
-	max-width: 170px;
-	object-fit: fill;
-	border: 1px solid black;
-	border-radius: 10px;
-  }
-
-  #xing {
-	height: 45px;
-	width: 170px;
-	max-width: 225px;
-	object-fit: fill;
-	border: 1px solid black;
-	border-radius: 10px;
-  }
-
 /* Left */ 
 
 #left{
