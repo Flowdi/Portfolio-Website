@@ -36,8 +36,6 @@ const translations = {
         buttons: {
           email: "E-Mail",
           github: "GitHub",
-          linkedin: "LinkedIn",
-          xing: "Xing",
         },
       },
 
@@ -243,8 +241,6 @@ const translations = {
         buttons: {
           email: "Email",
           github: "GitHub",
-          linkedin: "LinkedIn",
-          xing: "Xing",
         },
       },
 
